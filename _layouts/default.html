@@ -3,14 +3,14 @@
 
   {% include head.html %}
 
-  <body>
+  <body{% if jekyll.environment == "development" %} class="development"{% endif %}>
     
     {% if jekyll.environment == "development" %}
-    <h1>Development</h1>
+    <!-- DEVELOPMENT -->
     {% endif %}
     
     {% if jekyll.environment == "production" %}
-    <h1>Production</h1>
+    <!-- PRODUCTION< -->
     {% endif %}
 
     {% include header.html %}
