@@ -25,9 +25,17 @@ body {
   font-kerning: normal;
 }
 
+/*
+ * Removing this until the site goes live.
+ * It can be added back in when there actually is a production environment.
+
 .development {
   background-image: url('/img/uploads/development-watermark.png');
 }
+
+ *
+ */
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
