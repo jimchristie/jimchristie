@@ -4,6 +4,14 @@
   {% include head.html %}
 
   <body>
+    
+    {% if jekyll.environment == "development" %}
+    <h1>Development</h1>
+    {% endif %}
+    
+    {% if jekyll.environment == "production" %}
+    <h1>Production</h1>
+    {% endif %}
 
     {% include header.html %}
 
