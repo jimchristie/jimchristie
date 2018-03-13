@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jimirings
 github_username:  jimchristie
+permalink: /blog/:title/
 
 # Build settings
 markdown: kramdown
@@ -47,6 +48,6 @@ plugins:
 collections:
   art:
     output: true
-    permalink: /art/:path/
+    permalink: /art/:title/
     defaults:
       layout: post
