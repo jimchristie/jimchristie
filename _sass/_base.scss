@@ -120,6 +120,17 @@ a {
       text-decoration: underline;
     }
   }
+  
+  &.inherit {
+    color: inherit;
+    text-decoration: inherit;
+    
+    &:hover,
+    &:visited {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
 }
 
 
