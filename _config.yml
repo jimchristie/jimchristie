@@ -21,14 +21,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   I've become a strong supporter of agile methodologies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: jimirings
+github_username:  jimchristie
 
 # Build settings
 markdown: kramdown
 #theme: minima
 plugins:
   - jekyll-feed
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -42,8 +43,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-
-
 # Collections
 collections:
 # - art
@@ -51,4 +50,4 @@ collections:
     output: true
     permalink: /art/:path/
     defaults:
-    layout: post
+      layout: post
