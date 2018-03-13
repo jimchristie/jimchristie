@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jim Christie
-email: jim.e.christie@gmail.com
+email: fake@email.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm Jim Christie. I'm a web devoloper, an agile coach, a cyclist, and sometimes, an artist. As anyone who works on the internet should, I love cats. 
   I have over five years of web development experience. I lean strongly toward back end functionality of websites. I can do design, but I don't love it and, consequently, I'm not the best at it. 
