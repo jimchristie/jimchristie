@@ -45,7 +45,6 @@ plugins:
 
 # Collections
 collections:
-# - art
   art:
     output: true
     permalink: /art/:path/
