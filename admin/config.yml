@@ -21,7 +21,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
 
 
-collections: # A list of collections the CMS should be able to edit
+#collections: # A list of collections the CMS should be able to edit
   - name: "art" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Art" # Used in the UI, ie.: "New Post"
     folder: "_art" # The path to the folder where the documents are stored
