@@ -51,3 +51,10 @@ collections:
     permalink: /art/:title/
     defaults:
       layout: post
+
+collections:
+  work:
+    output: true
+    permalink: /work/:title/
+    defaults:
+      layout: post
