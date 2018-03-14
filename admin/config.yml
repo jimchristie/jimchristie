@@ -50,8 +50,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Name, name: name,  widget: string}
           - {label: Title, name: title, widget: string, required: false}
           - {label: Avatar, name: avatar, widget: image, required: false}
-    - {label: Organization, name: organization, widget: string, required: false}
-    - {label: Project, name: project, widget: string, required: false}
+      - {label: Organization, name: organization, widget: string, required: false}
+      - {label: Project, name: project, widget: string, required: false}
 
   - name: "work" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Work" # Used in the UI, ie.: "New Post"
