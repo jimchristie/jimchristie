@@ -59,7 +59,7 @@ collections:
       layout: post
       
   testimonials:
-    output: false
+    output: true
   
   certifications:
-    output: false
+    output: true
