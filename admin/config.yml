@@ -69,7 +69,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
         - label: "Testimonial"
           name: "testimonial"
-          widget: relation
+          widget: "relation"
           collection: "testimonials"
           valueField: "quote"
           searchFields: ["quote", "author", "project", "organization"]
