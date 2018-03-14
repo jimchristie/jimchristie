@@ -60,6 +60,8 @@ collections:
       
   testimonials:
     output: true
+    permalink: /certifications/:title/
   
   certifications:
     output: true
+    permalink: /certifications/:title/
