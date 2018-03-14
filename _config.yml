@@ -59,9 +59,7 @@ collections:
       layout: post
       
   testimonials:
-    output: true
-    permalink: /certifications/:title/
+    output: false
   
   certifications:
-    output: true
-    permalink: /certifications/:title/
+    output: false
