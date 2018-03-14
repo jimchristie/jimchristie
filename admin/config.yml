@@ -39,7 +39,7 @@ collections: # A list of collections the CMS should be able to edit
       
   - label: "Testimonials"
     name: "testimonials"
-    widget: "list"
+    folder: "_testimonials"
     fields:
     - {label: Quote, name: quote, widget: string}
     - label: Author
