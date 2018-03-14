@@ -30,7 +30,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{title}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Artist\'s Statement", name: "statement", widget: "markdown"}
+      - {label: "Artist's Statement", name: "statement", widget: "markdown"}
       - {label: "Media", name: "media", widget: "string"}
       - {label: "Primary Image", name: "primaryImage", widget: "image"}
       - label: "Additional Images"
