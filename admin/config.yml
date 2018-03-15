@@ -106,5 +106,12 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Widget 1", name: "widget1", widget: "string"}
           - {label: "Widget 2", name: "widget2", widget: "string"}
           - {label: "Widget 3", name: "widget3", widget: "image", required: false}
+      - label: "Object Widget 2"
+        widget: "object"
+        name: "objectWidget2"
+        fields:
+          - {label: "Widget 1", name: "widget1", widget: "string"}
+          - {label: "Widget 2", name: "widget2", widget: "string"}
+          - {label: "Widget 3", name: "widget3", widget: "image", required: false}
   
 
