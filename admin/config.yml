@@ -97,7 +97,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "objectTest"
     label: "Object Test"
     widget: "object"
-    folder "_objectTest"
+    folder: "_objectTest"
     fields:
       - {label: "Widget 1", name: "widget1", widget: "string"}
       - {label: "Widget 2", name: "widget2", widget: "string"}
