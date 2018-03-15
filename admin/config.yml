@@ -96,12 +96,14 @@ collections: # A list of collections the CMS should be able to edit
       
   - name: "objectTest"
     label: "Object Test"
-    widget: "object"
     folder: "_objectTest"
     create: true
     fields:
-      - {label: "Widget 1", name: "widget1", widget: "string"}
-      - {label: "Widget 2", name: "widget2", widget: "string"}
-      - {label: "Widget 3", name: "widget3", widget: "image", required: false}
+      - label: "Object Widget"
+        widget: "object"
+        name: "objectWidget"
+          - {label: "Widget 1", name: "widget1", widget: "string"}
+          - {label: "Widget 2", name: "widget2", widget: "string"}
+          - {label: "Widget 3", name: "widget3", widget: "image", required: false}
   
 
