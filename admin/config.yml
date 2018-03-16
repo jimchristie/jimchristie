@@ -92,6 +92,27 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "work"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "My Roles"
+        name: "roles"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Role", name: "role", widget: "string"}
+      - {label: "Snippet", name: "snippet", widget: "markdown", required: false}
+      - {label: "Start Date", name: "startDate", widget: "date", format: "MMM Do YY", default: ""}
+      - {label: "End Date", name: "endDate", widget: "date", format: "MMM Do YY", default: "", required: false}
+      - {label: "Web Link", name: "link", widget: "string", required: false}
+      - label: "Skills Used"
+        name: "skills"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Skill"
+            name: "skill"
+            widget: "relation"
+            collection: "skills"
+            valueField: "title"
+            searchFields: ["title"]
       - label: "Testimonials"
         name: "testimonials"
         widget: "list"
@@ -102,6 +123,21 @@ collections: # A list of collections the CMS should be able to edit
           collection: "testimonials"
           valueField: "quote"
           searchFields: ["quote", "name", "project", "organization"]
+      - label: "Featured Image"
+        name: "featuredImage"
+        widget: object
+        fields: 
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
+          - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"], default: "auto"}
+          - label: "Focal Point"
+            name: focalPoint
+            widget: object
+            fields: 
+              - {label: "left/right", name: "leftRight", widget: "string", required: false}
+              - {label: "top/bottom", name: "topBottom", widget: "string", required: false}
+      - {label: "Featured", name: "featured", widget: boolean, default: false}
+      - {label: "Enabled", name: "enabled", widget: boolean, default: false}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       
