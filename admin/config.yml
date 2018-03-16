@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: jimchristie/jimchristie-me-jekyll-netlify
-  branch: master # Branch to update (master by default)
+  branch: content # Branch to update (master by default)
 
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
@@ -16,11 +16,25 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "string", required: false}
+      - {label: "Snippet", name: "snippet", widget: "Markdown"}
+      - {label: "Category", name: "category", widget: "select", options: ["Work", "Life"], default: "Work"}
       - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Enabled", name: "enabled", widget: "boolean", default: false}
+      - label: "Featured Image"
+        name: "featuredImage"
+        widget: object
+        fields: 
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
+          - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"], default: "auto"}
+          - label: "Focal Point"
+            name: focalPoint
+            widget: object
+            fields: 
+              - {label: "left/right", name: "leftRight", widget: "string", required: false}
+              - {label: "top/bottom", name: "topBottom", widget: "string", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-
 
 #collections: # A list of collections the CMS should be able to edit
   - name: "art" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -94,24 +108,21 @@ collections: # A list of collections the CMS should be able to edit
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       
-  - name: "objectTest"
-    label: "Object Test"
-    folder: "_objectTest"
+  - name: "conferences"
+    label: "Conference"
+    folder: "_conferences"
     create: true
     fields:
-      - label: "Object Widget"
-        widget: "object"
-        name: "objectWidget"
-        fields:
-          - {label: "Widget 1", name: "widget1", widget: "string"}
-          - {label: "Widget 2", name: "widget2", widget: "string"}
-          - {label: "Widget 3", name: "widget3", widget: "image", required: false}
-      - label: "Object Widget 2"
-        widget: "object"
-        name: "objectWidget2"
-        fields:
-          - {label: "Widget 1", name: "widget1", widget: "string"}
-          - {label: "Widget 2", name: "widget2", widget: "string"}
-          - {label: "Widget 3", name: "widget3", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date", format: "MMM Do YY"}
+      - {label: "link", name: "Web Link", widget: "string", required: false}
+      
+  - name: "skills"
+    label: "Skill"
+    folder: "_skills"
+    create: true
+    fields:
+      - {label: "Skill", name: "skills", widget: "string"}
+      - {label: "Strength", name: "strength", widget: "number", valueType: "int", min: 1, max: 5, default: 3}
   
 
