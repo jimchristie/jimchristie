@@ -122,8 +122,8 @@ collections: # A list of collections the CMS should be able to edit
           name: "testimonial"
           widget: "relation"
           collection: "testimonials"
-          valueField: "quote"
-          searchFields: ["quote", "name", "project", "organization"]
+          valueField: "title"
+          searchFields: ["quote", "title", "project", "organization"]
       - label: "Featured Image"
         name: "featuredImage"
         widget: object
