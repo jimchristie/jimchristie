@@ -111,18 +111,22 @@ collections: # A list of collections the CMS should be able to edit
   - name: "conferences"
     label: "Conference"
     folder: "_conferences"
-    create: true
+    create: true 
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "date", format: "MMM Do YY"}
       - {label: "link", name: "Web Link", widget: "string", required: false}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       
   - name: "skills"
     label: "Skill"
     folder: "_skills"
-    create: true
+    create: true 
     fields:
       - {label: "Skill", name: "skills", widget: "string"}
       - {label: "Strength", name: "strength", widget: "number", valueType: "int", min: 1, max: 5, default: 3}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
   
 
