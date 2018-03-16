@@ -44,9 +44,21 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{title}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
+      - label: "Primary Image", 
+        name: "primaryImage", 
+        widget: "object"
+        fields:
+          - {label: "Image", name: "image", widget: "image", required: true}
+          - {label: "Image Orientation", "orientation", widget: "select", options: ["landscape", "portrait"], default: "landscape"}
+          - label: "Focal Point"
+            name: focalPoint
+            widget: object
+            fields: 
+              - {label: "left/right", name: "leftRight", widget: "string", required: false}
+              - {label: "top/bottom", name: "topBottom", widget: "string", required: false}
       - {label: "Artist's Statement", name: "statement", widget: "markdown"}
       - {label: "Media", name: "media", widget: "string"}
-      - {label: "Primary Image", name: "primaryImage", widget: "image"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
       - label: "Additional Images"
         name: "additionalImages"
         widget: "list"
