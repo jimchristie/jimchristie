@@ -92,6 +92,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "work"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Snippet", name: "snippet", widget: "markdown", required: false}
       - label: "My Roles"
         name: "roles"
         widget: "list"
