@@ -137,6 +137,22 @@ collections: # A list of collections the CMS should be able to edit
             fields: 
               - {label: "left/right", name: "leftRight", widget: "string", required: false}
               - {label: "top/bottom", name: "topBottom", widget: "string", required: false}
+      - label: "Additional Images"
+        name: "featuredImage"
+        widget: list
+          - label: "Image"
+          - name: "image"
+          - widget: "object"
+            fields: 
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
+              - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"], default: "auto"}
+              - label: "Focal Point"
+                name: focalPoint
+                widget: object
+                fields: 
+                  - {label: "left/right", name: "leftRight", widget: "string", required: false}
+                  - {label: "top/bottom", name: "topBottom", widget: "string", required: false}
       - {label: "Featured", name: "featured", widget: boolean, default: false}
       - {label: "Enabled", name: "enabled", widget: boolean, default: false}
     meta: # Meta data fields. Just like fields, but without any preview element
