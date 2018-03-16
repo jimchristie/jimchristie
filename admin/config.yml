@@ -140,6 +140,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Additional Images"
         name: "featuredImage"
         widget: list
+        fields: 
           - label: "Image"
             name: "image"
             widget: "object"
