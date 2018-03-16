@@ -1,7 +1,7 @@
 ---
 quote: Another great quote
-name: Some guy
-title: Chief whatever
+title: Some Guy
+jobTitle: Chief Whatever Officer
 organization: Acme
 project: Anvils
 ---
