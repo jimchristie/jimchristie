@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Snippet", name: "snippet", widget: "Markdown"}
+      - {label: "Snippet", name: "snippet", widget: "markdown"}
       - {label: "Category", name: "category", widget: "select", options: ["Work", "Life"], default: "Work"}
       - {label: "Featured", name: "featured", widget: "boolean", default: false}
       - {label: "Enabled", name: "enabled", widget: "boolean", default: false}
