@@ -141,8 +141,8 @@ collections: # A list of collections the CMS should be able to edit
         name: "featuredImage"
         widget: list
           - label: "Image"
-          - name: "image"
-          - widget: "object"
+            name: "image"
+            widget: "object"
             fields: 
               - {label: "Image", name: "image", widget: "image", required: false}
               - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
