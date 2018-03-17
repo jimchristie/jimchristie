@@ -99,7 +99,6 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         fields:
           - {label: "Role", name: "role", widget: "string"}
-      - {label: "Snippet", name: "snippet", widget: "markdown", required: false}
       - {label: "Start Date", name: "startDate", widget: "date", format: "MMM Do YY", default: ""}
       - {label: "End Date", name: "endDate", widget: "date", format: "MMM Do YY", default: "", required: false}
       - {label: "Web Link", name: "link", widget: "string", required: false}
