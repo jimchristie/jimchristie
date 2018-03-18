@@ -23,6 +23,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jimirings
 github_username:  jimchristie
+linkedin_username: jimchristieagile
+stackexchange:
+  username: jimirings
+  id: "1405583"
 permalink: /blog/:title/
 
 # Build settings
