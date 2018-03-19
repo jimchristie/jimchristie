@@ -16,6 +16,9 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {% if page.featuredImage.image != '' %}
+      <img class="featured" src="{{ post.featuredImage.image }}" />
+    {% endif %}
     {{ content }}
   </div>
 

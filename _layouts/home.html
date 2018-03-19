@@ -1,14 +1,88 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="home">
 
+  {% if page.title %}
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
+  {% endif %}
 
   <div class="post-content">
     {{ site.description }}
   </div>
-
 </article>
+{% assign featured_posts = site.posts | where:"featured", true %}
+{% assign featured_work = site.work | where:"featured", true %}
+{% assign featured_art = site.art | where:"featured", true %}
+
+
+{% if featured_posts.size > 0 %}
+<article class="home post">
+    <ul class="post-list">
+      {% for post in featured_posts %}
+      <li>
+        <h3 class="post-link">
+          Recent Post: <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
+        </h3>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {{ post.snippet | markdownify }}
+      </li>
+      {% endfor %}
+    </ul>
+</article>
+{% endif %}
+
+<h4 class="more">
+  <a href="/blog">All Blog Posts</a>
+</h4>
+
+
+
+
+
+
+
+
+{% if featured_work.size > 0 %}
+<article class="home post">
+    <ul class="post-list">
+      {% for post in featured_work %}
+      <li>
+        <h3 class="post-link">
+          <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
+        </h3>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {{ post.snippet | markdownify }}
+      </li>
+      {% endfor %}
+    </ul>
+</article>
+{% endif %}
+
+
+
+
+{% if featured_art.size > 0 %}
+<article class="home post">
+    <ul class="post-list">
+      {% for post in featured_art %}
+      <li>
+        <h3 class="post-link">
+          <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
+        </h3>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {{ post.snippet | markdownify }}
+      </li>
+      {% endfor %}
+    </ul>
+</article>
+{% endif %}
+
+<h4 class="more">
+  <a href="/blog">All Blog Posts</a>
+</h4>

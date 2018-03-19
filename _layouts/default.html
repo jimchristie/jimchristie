@@ -14,9 +14,18 @@
     {% endif %}
 
     {% include header.html %}
+    
+    {% if page.collection %}
+      {% assign class = page.collection %}
+    {% elsif page.title %}
+      {% assign class = page.title | downcase %}
+    {% else %}
+      {% assign class = "home"%}
+    {% endif %}
+    
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="wrapper {{ class }}">
         {{ content }}
       </div>
     </main>
