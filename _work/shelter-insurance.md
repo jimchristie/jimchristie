@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-single
 title: Shelter Insurance
 snippet: >-
   As a coach, trainer, and Scrum Master at Shelter Insurance, a 70 year-old

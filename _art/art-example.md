@@ -1,4 +1,5 @@
 ---
+layout: art-single
 title: Art Example
 primaryImage:
   image: /img/uploads/1-2-4-all.jpg
@@ -8,4 +9,3 @@ statement: >-
 media: Test
 featured: true
 ---
-

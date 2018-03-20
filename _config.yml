@@ -53,17 +53,27 @@ collections:
   art:
     output: true
     permalink: /art/:title/
-    defaults:
-      layout: post
+    values:
+      layout: art-single
 
   work:
     output: true
     permalink: /work/:title/
-    defaults:
-      layout: post
       
   testimonials:
     output: false
   
   certifications:
     output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: art
+    values:
+      layout: "art-single"
+  - scope:
+      path: ""
+      type: work
+    values:
+      layout: "work-single"
