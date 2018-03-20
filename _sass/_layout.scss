@@ -1,3 +1,8 @@
+
+
+
+
+
 /**
  * Site header
  */
@@ -5,9 +10,25 @@
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  
+  .wrapper {
+    position: relative;
+  }
+  
+  @include media-query($on-laptop){
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
+  }
+  
+  @include media-query($on-tablet){
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+  
+  @include media-query($on-palm){
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+  }
 }
 
 .site-title {
@@ -107,6 +128,24 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+  
+  .wrapper {
+  
+    @include media-query($on-laptop){
+      padding-left: $spacing-unit * 2;
+      padding-right: $spacing-unit * 2;
+    }
+
+    @include media-query($on-tablet){
+      padding-left: $spacing-unit;
+      padding-right: $spacing-unit;
+    }
+
+    @include media-query($on-palm){
+      padding-left: $spacing-unit / 2;
+      padding-right: $spacing-unit / 2;
+    }
+  }
 }
 
 .footer-heading {
