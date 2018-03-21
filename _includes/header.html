@@ -16,6 +16,7 @@
       <label for="nav-trigger"><span class="hamburger"><span class="fas fa-bars"></span>&nbsp;Menu</span><span class="close"><span class="fas fa-times"></span>&nbsp;Close</span></label>
     
       <ul class="nav-list">
+            <li class="nav-item"><a class="page-link home-link" href="/}">Home</a></li>
         {% for page in sorted_pages %}
           {% if page.title %}
             <li class="nav-item"><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
