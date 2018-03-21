@@ -10,6 +10,7 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 $half-spacing:     $spacing-unit / 2;
+$double-spacing:   $spacing-unit * 2;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
@@ -54,5 +55,6 @@ $on-laptop:        $content-width !default;
   "home",
   "nav",
   "reusable-classes",
-  "art"
+  "art",
+  "contact"
 ;
