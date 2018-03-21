@@ -1,0 +1,103 @@
+// .art-frame {
+//   background-color: $grey-color-light;
+//   text-align: center;
+// //   max-height: 90vh;
+  
+//   img {
+//     display: block;
+//     max-height: 100%;
+//   }
+// }
+
+// .art-single {
+//   img {
+//     max-height: 90vh;
+//     margin: 0 auto;
+//   }
+// }
+
+
+/*
+ * Hide lightbox elements on page load
+ */
+.lightbox,
+.close {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  @include media-query($on-palm){
+    display: block;
+  }
+}
+
+.gallery-preview {
+  display: block;
+}
+
+.gallery-trigger {
+  display: none;
+}
+.gallery-image {
+  display: block;
+  max-width: 25vh;
+}
+
+
+/******************* Lightbox ***********************/
+
+.gallery {
+  
+  input:checked ~ .lightbox {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: $lightbox-background;
+    left: 0;
+    overflow: hidden;
+    
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin-top: $half-spacing;
+    }
+    
+    img {
+      max-height: 80vh;
+      max-width: 80vw;
+      margin: 60px auto 0;
+      display: block;
+      overflow: hidden;
+    }
+    
+  }
+
+  input:checked ~ label {
+    position: fixed;
+    right: 15px;
+    z-index: 1;
+    text-align: right;
+
+    .close {
+      font-size: $spacing-unit;
+      display: block;
+      z-index: 1;
+      color: #fff;
+      position: fixed;
+      top: $half-spacing;
+      right: 0;
+      margin-right: calc(10% - #{$half-spacing}); // Not sure about the variable syntax. Reference https://stackoverflow.com/a/20236515/1516372
+      
+    }
+    
+    .gallery-image {
+      display: none;
+    }
+  }
+}

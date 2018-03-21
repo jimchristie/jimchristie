@@ -2,14 +2,41 @@
 layout: default
 ---
 
-<div class="art">
+<div class="art collection-index">
   {% if page.title %}
     <h1 class="page-heading">{{ page.title }}</h1>
   {% endif %}
 
   {{ content }}
+  
+  
 
   {% if site.art.size > 0 %}
+  
+  <div class="gallery">
+    {% assign count = 0 %}
+    {% for post in site.art %}
+    {% assign count = count | plus: 1 %}
+      <div class="gallery-image">
+        <input type="checkbox" id="gallery-trigger-{{ count }}" class="gallery-trigger">
+        <label for="gallery-trigger-{{ count }}" class="gallery-preview">
+          <span class="gallery-image"><img src="{{ post.primaryImage.image }}"></span>
+          <span class="far fa-times-circle close"></span>
+        </label>
+        <div class="lightbox">
+          <img class="lightbox-image" alt="{{ post.title }}" src="{{ post.primaryImage.image }}"/>
+          <h1 class="gallery-title">
+            {{ post.title }}
+          </h1>
+        </div>
+      </div>
+        
+    {% endfor %}
+  </div>
+  
+  
+  
+  <!--
     <ul class="post-list">
       {% for post in site.art %}
       <li>
@@ -28,6 +55,7 @@ layout: default
     </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  -->
   {% endif %}
 
 </div>
