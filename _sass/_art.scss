@@ -1,25 +1,4 @@
-// .art-frame {
-//   background-color: $grey-color-light;
-//   text-align: center;
-// //   max-height: 90vh;
-  
-//   img {
-//     display: block;
-//     max-height: 100%;
-//   }
-// }
-
-// .art-single {
-//   img {
-//     max-height: 90vh;
-//     margin: 0 auto;
-//   }
-// }
-
-
-/*
- * Hide lightbox elements on page load
- */
+//Hide lightbox elements on page load
 .lightbox,
 .close {
   display: none;
@@ -29,6 +8,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
+  label {
+    cursor: pointer;
+  }
   
   @include media-query($on-palm){
     display: block;
