@@ -22,6 +22,11 @@
 .nav-item {
   display: block;
   list-style-type: none;
+  margin-left: $spacing-unit;
+  
+  @include media-query($on-palm){
+    margin-left: 0;
+  }
   
   a {
     text-decoration: none;
