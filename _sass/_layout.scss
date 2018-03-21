@@ -132,6 +132,10 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+  
+  @include media-query($on-laptop) {
+    padding: 0;
+  }
 }
 
 .page-heading {
