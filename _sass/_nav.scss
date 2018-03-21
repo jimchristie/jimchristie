@@ -24,6 +24,10 @@
   list-style-type: none;
   padding-left: 20px;
   
+  @include media-query($on-palm){
+    padding-left: 0;
+  }
+  
   a {
     text-decoration: none;
     color: inherit;
