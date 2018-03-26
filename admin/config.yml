@@ -33,8 +33,8 @@ collections: # A list of collections the CMS should be able to edit
             fields: 
               - {label: "left/right", name: "leftRight", widget: "string", required: false}
               - {label: "top/bottom", name: "topBottom", widget: "string", required: false}
-    meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+    #meta: # Meta data fields. Just like fields, but without any preview element
 
 #collections: # A list of collections the CMS should be able to edit
   - name: "art" # Used in routes, ie.: /admin/collections/:slug/edit
