@@ -47,6 +47,74 @@ $on-laptop:        $content-width !default;
   font-size: $base-font-size * $ratio;
 }
 
+@function strip-unit($number){
+  @return $number / ($number * 0 + 1);
+}
+
+@function rem-multiplier(){
+  $base: strip-unit($base-font-size);
+  @return 1 / $base;
+}
+
+/**
+  * takes in an property and outputs a pixel fallback and a rem value
+  */
+@mixin rem-fallback($property, $pixels) {
+  $number: strip-unit($pixels);
+  
+  #{$property}: $number + px;
+  #{$property}: ($number * rem-multiplier()) + rem;
+}
+
+/**
+  * takes in font-size in pixels
+  * writes a rem fallback
+  */
+@mixin px-font-size($size) {
+  $number: strip-unit($size);
+  $unit: unit($size);
+  
+  @if $unit == "px" {
+    @include rem-fallback('font-size', $size);
+  } @else if $unit == 'rem' {
+    font-size: (strip-unit($base-font-size) * $size) + px;
+    font-size: $size;
+  } @else if $unit == 'em'{
+    font-size: $size;
+  } @else {
+    font-size-unit: assumed-pixels;
+    @include rem-fallback('font-size', ($number + 'px'));
+  }
+}
+
+/**
+  * builds out a border property in both px and rem font size
+  * takes in any number of border properties
+  */
+@mixin rem-fallback-border ($size, $properties...) {
+  $number: strip-unit($size);
+  $unit: unit($size);
+  $pixels: $number + px;
+  $rem: ($number * rem-multiplier()) + rem;
+  
+  @if $unit == '' {
+    border-size-unit: assumed-pixels;
+  } 
+  
+  @if $unit == 'rem' {
+    $pixels: $number * strip-unit($base-font-size);
+    $rem: $size;
+  }
+  
+  @for $i from 1 through length($properties) {
+    $pixels: $pixels + ' ' + nth($properties, $i);
+    $rem: $rem + ' ' + nth($properties, $i);
+  }
+  
+  border: $pixels;
+  border: $rem;
+}
+
 // Import partials.
 @import
   "base",
