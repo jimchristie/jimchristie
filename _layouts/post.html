@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="blog-post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -17,7 +17,9 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {% if page.featuredImage.image != '' %}
-      <img class="featured" src="{{ post.featuredImage.image }}" />
+      <p>
+        <img class="featured" src="{{ page.featuredImage.image }}" />
+    </p>
     {% endif %}
     {{ content }}
   </div>
