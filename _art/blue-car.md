@@ -5,6 +5,7 @@ primaryImage:
     leftRight: 30%
     topBottom: center
   image: /img/uploads/MeAndDadBlueCar.jpg
+  undefined: landscape
 statement: >-
   This was a 3x5 photo of me and my dad. The photo was grainy in addition to
   being small, making the painting incredibly difficult. It took me almost two
