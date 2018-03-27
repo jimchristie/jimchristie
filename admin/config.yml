@@ -26,8 +26,8 @@ collections: # A list of collections the CMS should be able to edit
         required: false 
         fields: 
           - {label: "Image", name: "image", widget: "image", required: false}
-          - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
-          - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"], default: "auto"}
+          - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"]}
+          - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"]}
           - label: "Focal Point"
             name: focalPoint
             widget: object
@@ -49,8 +49,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         fields:
           - {label: "Image", name: "image", widget: "image", required: true}
-          - {label: "Image Orientation", name: "orientation", widget: "select", options: ["landscape", "portrait"], default: "landscape"}
-          - {label: "Garbage", name: "garbage", widget: "select", options: ["garbage", "garbage2"], default: "garbage"}
+          - {label: "Image Orientation", name: "orientation", widget: "select", options: ["landscape", "portrait"]}
           - label: "Focal Point"
             name: focalPoint
             widget: object
@@ -131,8 +130,8 @@ collections: # A list of collections the CMS should be able to edit
         widget: object
         fields: 
           - {label: "Image", name: "image", widget: "image", required: false}
-          - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
-          - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"], default: "auto"}
+          - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"]}
+          - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"]}
           - label: "Focal Point"
             name: focalPoint
             widget: object
@@ -149,8 +148,8 @@ collections: # A list of collections the CMS should be able to edit
             widget: "object"
             fields: 
               - {label: "Image", name: "image", widget: "image", required: false}
-              - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
-              - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"], default: "auto"}
+              - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"]}
+              - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"]}
               - label: "Focal Point"
                 name: focalPoint
                 widget: object
@@ -194,7 +193,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true 
     fields:
       - {label: "Skill", name: "title", widget: "string"}
-      - {label: "Strength", name: "strength", widget: "number", valueType: "int", min: 1, max: 5, default: 3}
+      - {label: "Strength", name: "strength", widget: "number", valueType: "int", min: 1, max: 5}
       - {label: "Start Date", name: "start", widget: "date", format: "MMM Do YY", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
