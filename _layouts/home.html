@@ -24,7 +24,7 @@ layout: default
 {% if featured_posts.size > 0 %}
 <article class="home post">
     <ul class="post-list">
-      {% for post in featured_posts %}
+      {% for post in featured_posts limit:1 %}
       <li>
         <h3 class="post-link">
           Recent Post: <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
