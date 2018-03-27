@@ -27,6 +27,7 @@ collections: # A list of collections the CMS should be able to edit
         fields: 
           - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Orientation", name: "orientation", widget: "select", options: ["portrait", "landscape"], default: "portrait"}
+          - {label: "Garbage", name: "garbage", widget: "select", options: ["garbage", "garbage2"], default: "garbage"}
           - {label: "Fill", name: "fill", widget: "select", options: ["cover", "contain", "auto", "initial"], default: "auto"}
           - label: "Focal Point"
             name: focalPoint
