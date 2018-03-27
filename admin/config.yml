@@ -49,7 +49,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         fields:
           - {label: "Image", name: "image", widget: "image", required: true}
-          - {label: "Image Orientation", "orientation", widget: "select", options: ["landscape", "portrait"], default: "landscape"}
+          - {label: "Image Orientation", name: "orientation", widget: "select", options: ["landscape", "portrait"], default: "landscape"}
           - label: "Focal Point"
             name: focalPoint
             widget: object
