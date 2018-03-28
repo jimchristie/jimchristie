@@ -19,6 +19,6 @@ media: >-
   Acrylic on canvas. Applied by mixing paint with water and pouring it onto the
   canvas. I then manipulated the canvas to force the paint to flow in different
   directions.
-featured: false
+featured: true
 ---
 
