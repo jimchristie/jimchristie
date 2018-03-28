@@ -17,7 +17,7 @@ layout: default
     {% assign count = 0 %}
     {% for post in site.art %}
     {% assign count = count | plus: 1 %}
-      <div class="gallery-image">
+      <div class="gallery-image{% if post.primaryImage.image.orientation != '' %} {{ post.primaryImage.orientation }}{% endif %}">
         <input type="checkbox" id="gallery-trigger-{{ count }}" class="gallery-trigger">
         <label for="gallery-trigger-{{ count }}" class="gallery-preview">
           <span class="gallery-image"><img src="{{ post.primaryImage.image }}"></span>
