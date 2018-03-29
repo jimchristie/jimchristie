@@ -32,11 +32,11 @@
 }
 
 .portrait {
-  max-width: 25vh;
+  max-width: 25%;
 }
 
 .landscape {
-  max-width: 40vh;
+  max-width: 35%;
 }
 
 @include media-query($on-palm){
@@ -60,20 +60,19 @@
     top: 0;
     background-color: $lightbox-background;
     left: 0;
-    overflow: hidden;
     
     h1 {
+      margin-top: $half-spacing;
       color: #fff;
       text-align: center;
       margin-top: $half-spacing;
     }
     
     img {
-      max-height: 80vh;
+      display: block;
       max-width: 80vw;
       margin: 60px auto 0;
-      display: block;
-      overflow: hidden;
+      max-height: calc(80vh - 60px);
     }
     
   }
