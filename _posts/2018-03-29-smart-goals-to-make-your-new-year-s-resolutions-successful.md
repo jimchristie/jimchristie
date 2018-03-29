@@ -20,9 +20,9 @@ date: '2018-01-08 01:56:16'
 ---
 My local Rec Center has an indoor track that runs around the edge of the building just inside their giant two story windows. Driving by, you can see people walking and running on the track. Every morning, I pass by on my way to work and see one or two people engaged in their morning routine. Today, I saw at least half a dozen. It instantly hit me: It's New Year's resolution time. 
 
-Unfortunately, most of those people won't be there in a few weeks. And I hate to say this, but the statistical likelihood of your New Year's resolution failing is pretty high. Mine too. (Math is harsh.)  It's simply a fact that most new year's resolutions fail, a whopping 92%, according to Forbes. There are two primary reasons for this.
+Unfortunately, most of those people won't be there in a few weeks. And I hate to say this, but the statistical likelihood of your New Year's resolution failing is pretty high. Mine too. (Math is harsh.)  It's simply a fact that most new year's resolutions fail, a [whopping 92%, according to Forbes](https://www.forbes.com/sites/dandiamond/2013/01/01/just-8-of-people-achieve-their-new-years-resolutions-heres-how-they-did-it/#6914fa60596b). There are two primary reasons for this.
 
-The first, and the one that I'll talk about today, is that we don't make the right kinds of resolutions. We say things like, "I'm going to eat better," or "I'm going to read more." The problem with these kinds of goals is that they're not SMART.
+The first, and the one that I'll talk about today, is that we don't make the right kinds of resolutions. We say things like, "I'm going to eat better," or "I'm going to read more." The problem with these kinds of goals is that they're not [SMART](https://en.wikipedia.org/wiki/SMART_criteria).
 
 ### SMART Goals
 
@@ -38,23 +38,23 @@ Setting goals based on these criteria ensures that you are solving the problem a
 
 If we focus on our "eat better" goal as an example, it only meets one of the criteria.
 
-####Specific
+\####Specific
 
 It's not specific because it's not clear exactly what we plan to do. Does "eat better" mean that we're going to eat more vegetables? Or does it mean we're going to eat less food altogether?
 
-####Measurable
+\####Measurable
 
 It's not a measurable goal either. That is to say that there's no point at which we can declare the goal reached. "Eat better" has no perceivable end.
 
-####Achievable
+\####Achievable
 
 We must be able to reach our goal. If we determine that "eat better" really means "eat less," we can't limit ourselves to a peanut every day because it's just not realistic.
 
-####Relevant
+\####Relevant
 
 Ah, finally. We've reached a criteria that works. Our original goal of "eat better" is totally relevant. Presumably, the problem we're trying to solve is health related and diet is an important part of health. Of course, if the problem you're trying to solve is not having enough money, there are probably better ways to solve that problem. But, generally speaking, this is the piece that comes most naturally to us. We all know that eating better is a ridiculous way to save money. This piece is more important to focus on when dealing with more complex problems where cause and effect are less obvious.
 
-####Time-boxed
+\####Time-boxed
 
 Finally, we want our goals to be time boxed. We want to set a date where we can look back at our measurements about our specific goal and say that we either have or have not achieved that goal.
 
