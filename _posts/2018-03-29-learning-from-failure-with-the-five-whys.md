@@ -11,6 +11,7 @@ featured: true
 enabled: true
 featuredImage:
   fill: cover
+  image: /img/uploads/house-painter-why.jpg
   orientation: landscape
 date: '2018-01-16 02:19:34'
 ---
