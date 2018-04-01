@@ -23,8 +23,6 @@ date: '2014-08-26 08:32:42'
 
 We flew out of [Columbia airport](http://www.flymidmo.com/), which was awesome. We took off about 6:00 a.m. and landed at 11:30.
 
-![Welcome to New York](/img/uploads/Welcome-to-New-York.jpg)
-
 We immediately put our lives at risk by taking a taxi to the hotel. After barely surviving and getting dropped off at the wrong Hilton because our cab driver couldn’t understand English, we walked to our real hotel. Ah, New York
 
 We walked around a bit, taking in the sights and smells. Taking in the smells was most unpleasant. Everything smelled like urine. Literally. We eventually discovered that all of Manhattan smells like that. Except for the parts that smell like trash. Or vomit. We found ourselves on the edge of Central Park and wandered around there for a bit. It was nice. [Forest Park](http://en.wikipedia.org/wiki/Forest_Park_(St._Louis)) is bigger. Take that, New York! Brooke knew a lot of the history from having recently read [_Devil in the White City_](http://en.wikipedia.org/wiki/The_Devil_in_the_White_City) and was my personal tour guide for the evening.
