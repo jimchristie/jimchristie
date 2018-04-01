@@ -149,9 +149,13 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  
+  .post-title {
+    @include rem-fallback(margin-bottom, $quarter-spacing);
+  }
 
-  > li {
-    margin-bottom: $spacing-unit;
+  .post {
+    margin-bottom: $double-spacing;
   }
 }
 

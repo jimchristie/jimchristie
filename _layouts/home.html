@@ -26,9 +26,12 @@ layout: default
     <ul class="post-list">
       {% for post in featured_posts limit:1 %}
       <li>
-        <h3 class="post-link">
-          Recent Post: <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
+        <h3>
+          Recent Blog Post
         </h3>
+        <h4>
+          <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
+        </h4>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
           {{ post.snippet | markdownify }}
