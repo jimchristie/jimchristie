@@ -2,8 +2,8 @@
 layout: post
 title: New York Trip – Book I
 snippet: >-
-  \[Brooke](http://brookefletcher.com/) and I went to New York a few weeks back.
-  Her employer sent her to \[Nielsen Norman’s Usability
+  [Brooke](http://brookefletcher.com/) and I went to New York a few weeks back.
+  Her employer sent her to [Nielsen Norman’s Usability
   Week](http://www.nngroup.com/training/). These are some of our adventures.
 category: Life
 featured: false
