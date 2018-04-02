@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It’s all about moderation
+title: It’s all about moderation.
 snippet: >-
   One of my most oft-visited sites on the internets is \[Bicycles Stack
   Exchange](http://bicycles.stackexchange.com/). I was recently elected to be a
@@ -8,7 +8,7 @@ snippet: >-
 category: Life
 featured: false
 enabled: true
-date: '2014-03-20 10:22:07'
+date: '2014-03-20 10:21:07'
 ---
 One of my most oft-visited sites on the internets is [Bicycles Stack Exchange](http://bicycles.stackexchange.com/). In fact, I really love the whole [Stack Exchange network](http://stackexchange.com/).
 
