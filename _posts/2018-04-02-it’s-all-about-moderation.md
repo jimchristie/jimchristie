@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It’s all about moderation.
+title: It’s all about moderation
 snippet: >-
   One of my most oft-visited sites on the internets is \[Bicycles Stack
   Exchange](http://bicycles.stackexchange.com/). I was recently elected to be a
