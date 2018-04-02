@@ -18,7 +18,7 @@ As people use the site, they build up various [privileges](http://bicycles.stack
 
 There are also moderators who have sort of superuser privileges. Moderators are elected by the community in periodic elections. When I recently heard that a moderator position had opened up and that there would be an election, I cast in my [nomination](http://bicycles.stackexchange.com/election/2#post-20533).
 
-Bicycles Stack Exchange Badge
+[![Bicycles Stack Exchange Badge](https://bicycles.stackexchange.com/users/flair/4239.png)](https://bicycles.stackexchange.com/users/4239/jimirings)
 
 The little diamond is for moderators.
 
