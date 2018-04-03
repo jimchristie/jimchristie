@@ -81,22 +81,27 @@ layout: default
 -->
 
 {% if featured_art.size > 0 %}
-<article class="home art">
-    <ul class="post-list">
-      {% for post in featured_art %}
-      <li class="art-image">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.primaryImage.image }}" />
-          <span class="image-caption">
-           {{ post.title }}
-          </span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-</article>
+{% assign count = 0 %}
+<section class="home art">
+  <h3>
+    Featured Artworks
+  </h3>
+  <div class="post-list">
+    {% for post in featured_art limit: 4 %}
+    {% assign count = count | plus:1 %}
+    <div class="art-preview art-preview-{{ count }}">
+      <div class="thumbnail" style="background-image: url({{ post.primaryImage.image }});{% if post.primaryImage.focalPoint %} background-position: {{ post.primaryImage.focalPoint.leftRight }} {{ post.primaryImage.focalPoint.topBottom }};{% endif %}">
+        <a href="{{ post.url | relative_url }}"></a>
+      </div>
+      <p class="image-caption">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 {% endif %}
 
 <h4 class="more">
-  <a href="/blog">View Gallery</a>
+  <a href="/art">View Gallery</a>
 </h4>
