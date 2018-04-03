@@ -93,9 +93,9 @@ layout: default
       <div class="thumbnail" style="background-image: url({{ post.primaryImage.image }});{% if post.primaryImage.focalPoint %} background-position: {{ post.primaryImage.focalPoint.leftRight }} {{ post.primaryImage.focalPoint.topBottom }};{% endif %}">
         <a href="{{ post.url | relative_url }}"></a>
       </div>
-      <p class="image-caption">
+      <h4 class="title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </p>
+      </h4>
     </div>
     {% endfor %}
   </div>
