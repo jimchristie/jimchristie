@@ -3,12 +3,16 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign sorted_pages = site.pages | sort:"order" %}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
-      {% if page.title %}
+    {% if page.title %}
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
         <img src="/img/uploads/logo.jpg" style="border-radius: 50%; height: 45px; width: 45px; vertical-align: middle; "/> 
-      {% endif %}
-      <span style="vertical-align: middle;">{{ site.title | escape }}</span>
-    </a>
+      </a>
+    {% endif %}
+    <h1 class="site-title">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
+         <span style="vertical-align: middle;">{{ site.title | escape }}</span>
+      </a>
+    </h1>
 
     {% if sorted_pages %}
     <div class="nav">
