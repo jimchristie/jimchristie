@@ -76,6 +76,6 @@ defaults:
       layout: "art-single"
   - scope:
       path: ""
-      type: work-single
+      type: work
     values:
       layout: "work-single"
