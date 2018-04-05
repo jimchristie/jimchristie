@@ -1,5 +1,4 @@
 ---
-layout: work-single
 title: IT Senior Associate
 snippet: >-
   I was an instrumental figure in planning and executing IT initiatives at
@@ -8,6 +7,7 @@ snippet: >-
 startDate: Mar 2nd 15
 endDate: Jun 12th 15
 link: 'http://www.dbrl.org/'
+logo: /img/uploads/dbrl-logo.jpg
 featured: false
 enabled: true
 ---
