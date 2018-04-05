@@ -14,5 +14,6 @@ media: >-
   Digital. Primarily done on a Samsung Note Pro with the AutoDesk SketchBook
   app. However, I tinkered with other programs as well.
 featured: true
+date: '2016-08-19 12:00:00'
 ---
 
