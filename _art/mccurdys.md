@@ -12,5 +12,6 @@ media: >-
   devices with several different apps. I bounced from one to the other,
   experimenting with each.
 featured: true
+date: '2016-11-15 12:00:00'
 ---
 
