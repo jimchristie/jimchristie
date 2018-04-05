@@ -18,17 +18,17 @@ layout: default
 </article>
 {% assign featured_posts = site.posts | where:"featured", true %}
 {% assign featured_work = site.work | where:"featured", true %}
-{% assign featured_art = site.art | where:"featured", true %}
+{% assign featured_art = site.art | where:"featured", true | sort: date | reverse %}
 
 
 {% if featured_posts.size > 0 %}
 <article class="home post">
+    <h3 class="section-title">
+      Recent Blog Post
+    </h3>
     <ul class="post-list">
       {% for post in featured_posts limit:1 %}
       <li>
-        <h3>
-          Recent Blog Post
-        </h3>
         <h4>
           <a href="{{ post.url | relative_url }}"> {{ post.title }}</a>
         </h4>
@@ -83,7 +83,7 @@ layout: default
 {% if featured_art.size > 0 %}
 {% assign count = 0 %}
 <section class="home art">
-  <h3>
+  <h3 class="section-title">
     Featured Artworks
   </h3>
   <div class="post-list">
