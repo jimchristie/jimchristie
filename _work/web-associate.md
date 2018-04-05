@@ -1,5 +1,6 @@
 ---
 title: Web Associate
+company: Daniel Boone Regional Library
 snippet: >-
   As one of two web associates at the Daniel Boone Regional Library, I was
   jointly responsible for designing and coding all of the library’s web

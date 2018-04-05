@@ -1,5 +1,6 @@
 ---
 title: Agile Coach and Linux Admin
+company: 979 Design
 snippet: >-
   979 Design was a small start-up web design agency. I primarily filled two
   roles in this organization: Linux administrator and agile coach.

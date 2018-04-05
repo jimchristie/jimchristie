@@ -1,5 +1,6 @@
 ---
 title: 'Agile Coach, Trainer, and Scrum Master'
+company: Shelter Insurance
 snippet: >-
   As a coach, trainer, and Scrum Master at Shelter Insurance, a 70 year-old
   agent focused insurance company, I engage teams and individuals to evaluate

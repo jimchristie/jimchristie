@@ -1,5 +1,6 @@
 ---
 title: Software Developer
+company: Shelter Insurance
 snippet: >-
   As a member of a Scrum team, I shared the responsibility of designing,
   implementing, and testing the Say Insurance web application. This was part of

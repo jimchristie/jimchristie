@@ -1,5 +1,6 @@
 ---
 title: IT Senior Associate
+company: Daniel Boone Regional Library
 snippet: >-
   I was an instrumental figure in planning and executing IT initiatives at
   Daniel Boone Regional Library,  a public library system consisting of three
