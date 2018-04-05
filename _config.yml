@@ -59,6 +59,8 @@ collections:
   work:
     output: true
     permalink: /work/:title/
+    values:
+      layout: work-single
       
   testimonials:
     output: false
@@ -74,6 +76,6 @@ defaults:
       layout: "art-single"
   - scope:
       path: ""
-      type: work
+      type: work-single
     values:
       layout: "work-single"

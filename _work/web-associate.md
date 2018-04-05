@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-single
 title: Web Associate
 snippet: >-
   As one of two web associates at the Daniel Boone Regional Library, I was

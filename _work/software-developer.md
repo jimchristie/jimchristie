@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-single
 title: Software Developer
 snippet: >-
   As a member of a Scrum team, I shared the responsibility of designing,

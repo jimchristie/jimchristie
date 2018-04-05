@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: work-single
 title: IT Senior Associate
 snippet: >-
   I was an instrumental figure in planning and executing IT initiatives at
