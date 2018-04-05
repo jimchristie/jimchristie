@@ -1,5 +1,4 @@
 ---
-layout: work-single
 title: Agile Coach and Linux Admin
 snippet: >-
   979 Design was a small start-up web design agency. I primarily filled two
@@ -10,6 +9,7 @@ roles:
 startDate: Dec 15th 15
 endDate: Dec 15th 16
 link: 'https://www.linkedin.com/company/979-design-studio/'
+logo: /img/uploads/979-design-logo.png
 featured: false
 enabled: true
 ---
