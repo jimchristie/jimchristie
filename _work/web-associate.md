@@ -1,5 +1,4 @@
 ---
-layout: work-single
 title: Web Associate
 snippet: >-
   As one of two web associates at the Daniel Boone Regional Library, I was
@@ -8,6 +7,7 @@ snippet: >-
 startDate: Aug 5th 13
 endDate: Jun 12th 15
 link: 'http://www.dbrl.org'
+logo: /img/uploads/dbrl-logo.jpg
 featured: false
 enabled: true
 ---
