@@ -7,6 +7,7 @@ statement: >-
   My little sister absolutely loves manatees. I painted this for her for
   Christmas one year.
 media: Acrylic on canvas.
-featured: true
+featured: false
+date: '2016-11-15 12:00:00'
 ---
 
