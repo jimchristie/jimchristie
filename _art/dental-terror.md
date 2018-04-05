@@ -10,6 +10,7 @@ statement: I made this to terrorize my coworkers.
 media: >-
   Digital photo, duplicated and edited with Prisma, then stitched together with
   Inkscape.
-featured: false
+featured: true
+date: '2017-06-15 12:00:00'
 ---
 
