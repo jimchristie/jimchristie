@@ -90,7 +90,6 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "work"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Snippet", name: "snippet", widget: "markdown", required: false}
@@ -125,6 +124,7 @@ collections: # A list of collections the CMS should be able to edit
           collection: "testimonials"
           valueField: "title"
           searchFields: ["quote", "title", "project", "organization"]
+      - {label: "Logo", name: "logo", widget: "image", required: false}
       - label: "Featured Image"
         name: "featuredImage"
         required: false
