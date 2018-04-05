@@ -20,5 +20,6 @@ media: >-
   canvas. I then manipulated the canvas to force the paint to flow in different
   directions.
 featured: true
+date: '2016-08-09 12:00:00'
 ---
 
