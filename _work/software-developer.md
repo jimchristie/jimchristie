@@ -1,5 +1,4 @@
 ---
-layout: work-single
 title: Software Developer
 snippet: >-
   As a member of a Scrum team, I shared the responsibility of designing,
@@ -10,6 +9,7 @@ startDate: Jun 15th 15
 endDate: Oct 14th 16
 link: 'https://sayinsurance.com/'
 skills: []
+logo: /img/uploads/shelter-logo.png
 featured: false
 enabled: true
 ---
