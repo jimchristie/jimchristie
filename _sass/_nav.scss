@@ -3,9 +3,9 @@
 .nav {
   margin: 0;
   position: absolute;
-  right: 15px;
-  top: 12px;
-  font-size: 20px;
+  @include rem-fallback(right, 15px);
+  @include rem-fallback(top, 18px);
+  @include rem-fallback(font-size, 20px);
   
   label {
     display: none;
@@ -81,8 +81,8 @@
 
   .nav-list {
     display: none;
-    margin-top: 25px;
-    padding-top: 55px;
+    @include rem-fallback(margin-top, 25px);
+    @include rem-fallback(padding-top, 85px);
     border-top: 5px solid $grey-color-dark;
     text-align: center;
     box-sizing: border-box;
