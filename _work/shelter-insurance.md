@@ -1,6 +1,5 @@
 ---
-layout: work-single
-title: Shelter Insurance
+title: 'Agile Coach, Trainer, and Scrum Master'
 snippet: >-
   As a coach, trainer, and Scrum Master at Shelter Insurance, a 70 year-old
   agent focused insurance company, I engage teams and individuals to evaluate
@@ -16,6 +15,7 @@ skills:
   - skill: Scrum
   - skill: Kanban
   - skill: 4C Training
+logo: /img/uploads/shelter-logo.png
 featured: true
 enabled: true
 ---
