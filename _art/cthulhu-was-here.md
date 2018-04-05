@@ -9,5 +9,6 @@ statement: >-
   me](/blog/i-made-some-art-or-did-i/).
 media: Dry erase marker on whiteboard
 featured: false
+date: '2016-11-16 12:00:00'
 ---
 
