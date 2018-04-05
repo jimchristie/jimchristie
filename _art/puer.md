@@ -12,5 +12,6 @@ media: >-
   on a Samsung Note 8.0, but finished it in AutoDesk SketchBook on a Samsung
   Note Pro.
 featured: true
+date: '2016-08-18 12:01:00'
 ---
 
