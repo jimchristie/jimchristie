@@ -56,9 +56,9 @@
     height: 100vh;
     width: 100vw;
     position: fixed;
-    top: -25px;
+    @include rem-fallback(top, -25px);
     background-color: $background-color;
-    left: -30px;
+    @include rem-fallback(left, -30px);
     overflow: hidden;
 
   }
@@ -66,12 +66,13 @@
   
   input:checked ~ label[for="nav-trigger"] {
     position: fixed;
-    right: 15px;
+    @include rem-fallback(right, 15px);
     z-index: 1;
     text-align: right;
 
     .close {
       display: block;
+      @include rem-fallback(margin-right, 15px);
     }
 
     .hamburger {

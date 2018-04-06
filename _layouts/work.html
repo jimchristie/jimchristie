@@ -4,42 +4,25 @@ layout: default
 
 <div class="work collection-index">
   {% if page.title %}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading">{{ page.title }} History</h1>
   {% endif %}
-
-  {{ content }}
-
+  
   {% if site.work.size > 0 %}
-  {% assign sorted_work = site.work | sort:endDate %}
+    {% assign sorted_work = site.work | sort:"startDate" | reverse %}
     <ul class="post-list">
       {% for post in sorted_work %}
-      <li>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {% assign date_format = site.minima.date_format | default: "%B, %Y" %}
-        <span class="post-meta">{{ post.startDate | date: date_format }} - {% if post.endDate != '' %}{{ post.endDate | date: date_format }}{% else %}Present{% endif %}</span>
-        
-        <div class="logo-image-container">
-          {% if post.logo %}
-            <div class="logo">
-              <img src="{{ post.logo }}" alt="{{ post.company }} logo">
-            </div>
-          {% endif %}
-          {% if post.snippet %}
-            <div class="snippet">
-              {{ post.snippet }}
-            </div>
-          {% endif %}
-        </div>
-        
-      </li>
+        {% if post.endDate %}
+        {% else %}
+          {% include work-index-snippet.html %}
+        {% endif %}
+      {% endfor %}
+      {% assign sorted_work = site.work | sort:"endDate" | reverse %}
+      {% for post in sorted_work %}
+        {% if post.endDate %}
+          {% include work-index-snippet.html %}
+        {% endif %}
       {% endfor %}
     </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {% endif %}
 
 </div>

@@ -1,0 +1,57 @@
+.work {
+  li {
+    &:last-child {
+      .logo-snippet-container {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .logo-snippet-container {
+    display: flex;
+    @include rem-fallback(margin-bottom, ($spacing-unit) * 2);
+    @include rem-fallback(margin-top, $spacing-unit);
+    
+    @include media-query($on-palm){
+      display: block; 
+    }
+  }
+  
+  .job-title,
+  .company,
+  .employment-dates {
+    margin-bottom: 0;
+    
+    @include media-query($on-palm){
+      text-align: center;
+    }
+  }
+  
+  .employment-dates {
+    @include rem-fallback(margin-bottom, $half-spacing);
+  }
+  
+  .logo {
+    @include rem-fallback(width, 150px);
+    
+    @include media-query($on-tablet){
+      @include rem-fallback(width, 125px);
+    }
+    
+    @include media-query($on-palm){
+      @include rem-fallback(width, 100px);
+      margin: 0 auto;
+      @include rem-fallback(margin-bottom, $half-spacing);
+    }
+  }
+  
+  .snippet-container {
+    @include rem-fallback(margin-left, $spacing-unit);
+    width: 100vw;
+    
+    @include media-query($on-palm){
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

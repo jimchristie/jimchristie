@@ -7,8 +7,8 @@ snippet: >-
 roles:
   - role: Agile Coach
   - role: Linux Administrator
-startDate: Dec 15th 15
-endDate: Dec 15th 16
+startDate: 2015-12-15
+endDate: 2016-12-15
 link: 'https://www.linkedin.com/company/979-design-studio/'
 logo: /img/uploads/979-design-logo.png
 featured: false

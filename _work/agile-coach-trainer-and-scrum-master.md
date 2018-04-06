@@ -9,8 +9,7 @@ roles:
   - role: Agile Coach
   - role: Trainer
   - role: Scrum Master
-startDate: Oct 1st 16
-endDate: ''
+startDate: 2016-10-01
 link: 'https://shelterinsurance.com'
 skills:
   - skill: Scrum
