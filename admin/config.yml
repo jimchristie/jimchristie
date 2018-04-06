@@ -101,7 +101,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "Role", name: "role", widget: "string"}
       - {label: "Start Date", name: "startDate", widget: "date", format: "YYYY-MM-DD", default: ""}
-      - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD", default: false, required: false}
+      - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD", default: "", required: false}
       - {label: "Web Link", name: "link", widget: "string", required: false}
       - label: "Skills Used"
         name: "skills"
