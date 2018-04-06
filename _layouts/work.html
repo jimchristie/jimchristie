@@ -10,21 +10,31 @@ layout: default
   {{ content }}
 
   {% if site.work.size > 0 %}
+  {% assign sorted_work = site.work | sort:endDate %}
     <ul class="post-list">
-      {% for post in site.work %}
+      {% for post in sorted_work %}
       <li>
-        {% assign date_format = site.minima.date_format | default: "%B, %Y" %}
-        <span class="post-meta">{{ post.startDate | date: date_format }} - {% if post.endDate != '' %}{{ post.EndDate | date_format }}{% else %}Present{% endif %}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
-        {% if post.snippet %}
-          <div>
-            {{ post.snippet }}
-          </div>
-        {% endif %}
+        {% assign date_format = site.minima.date_format | default: "%B, %Y" %}
+        <span class="post-meta">{{ post.startDate | date: date_format }} - {% if post.endDate != '' %}{{ post.endDate | date: date_format }}{% else %}Present{% endif %}</span>
+        
+        <div class="logo-image-container">
+          {% if post.logo %}
+            <div class="logo">
+              <img src="{{ post.logo }}" alt="{{ post.company }} logo">
+            </div>
+          {% endif %}
+          {% if post.snippet %}
+            <div class="snippet">
+              {{ post.snippet }}
+            </div>
+          {% endif %}
+        </div>
+        
       </li>
       {% endfor %}
     </ul>
