@@ -10,6 +10,7 @@ roles:
   - role: Trainer
   - role: Scrum Master
 startDate: 2016-10-01
+endDate: 9999-12-31
 link: 'https://shelterinsurance.com'
 skills:
   - skill: Scrum

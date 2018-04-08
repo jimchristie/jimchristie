@@ -2,23 +2,29 @@
 layout: default
 ---
 
+{% assign year_format = site.minima.date_format | default: "%Y" %}
+
 <div class="work collection-index">
   {% if page.title %}
     <h1 class="page-heading">{{ page.title }} History</h1>
   {% endif %}
   
   {% if site.work.size > 0 %}
-    {% assign sorted_work = site.work | sort:"startDate" | reverse %}
+  
+  {% assign curent = site.work | sort:'startDate' | reverse %}
+  {% assign old = site.work | sort:'endDate' | reverse %}
+  
     <ul class="post-list">
-      {% for post in sorted_work %}
-        {% if post.endDate %}
-        {% else %}
+      {% for post in curent %}
+        {% capture endYear %}{{ post.endDate | date: year_format }}{% endcapture %}
+        {% if endYear == '9999' %}
           {% include work-index-snippet.html %}
         {% endif %}
       {% endfor %}
-      {% assign sorted_work = site.work | sort:"endDate" | reverse %}
-      {% for post in sorted_work %}
-        {% if post.endDate %}
+      
+      {% for post in old %}
+        {% capture endYear %}{{ post.endDate | date: year_format }}{% endcapture %}
+        {% if endYear != '9999' %}
           {% include work-index-snippet.html %}
         {% endif %}
       {% endfor %}

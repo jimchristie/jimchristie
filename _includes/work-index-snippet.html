@@ -1,5 +1,15 @@
+{% assign date_format = site.minima.date_format | default: "%B, %Y" %}
+{% assign year_format = site.minima.date_format | default: "%Y" %}
+{% capture endYear %}{{ post.endDate | date: year_format }}{% endcapture %}
+
+{% if endYear == '9999' %}
+  {{ assign current_or_old = 'current' }}
+{% else %}
+  {{ assign current_or_old = 'old' }}
+{% endif %}
+
 <li>
-  <div class="logo-snippet-container">
+  <div class="logo-snippet-container {{ current_or_old }}-job">
     {% if post.logo %}
       <div class="logo">
         <img src="{{ post.logo }}" alt="{{ post.company }} logo">
@@ -14,16 +24,23 @@
       <h4 class="company">
         {{ post.company }}
       </h4>
-
-      {% assign date_format = site.minima.date_format | default: "%B, %Y" %}
-      <p class="post-meta employment-dates">{{ post.startDate | date: date_format }} - {% if post.endDate %}{{ post.endDate | date: date_format }}{% else %}Present{% endif %}</p>
-
-
-        {% if post.snippet %}
-          <div class="snippet">
-            {{ post.snippet }}
-          </div>
-        {% endif %}
+      <p class="post-meta employment-dates">
+        <span class = "start-dates">
+          {{ post.startDate | date: date_format }} 
+        </span> - 
+        <span class="end-date">
+          {% if endYear != '9999' %}
+            {{ post.endDate | date: date_format }}
+          {% else %}
+            Present
+          {% endif %}
+        </span>
+      </p>
+      {% if post.snippet %}
+        <div class="snippet">
+          {{ post.snippet }}
+        </div>
+      {% endif %}
     </div>
   </div>
 </li>
