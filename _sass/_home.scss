@@ -51,8 +51,16 @@
   &.post,
   &.art,
   &.work {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid $grey-color-light;
     padding-top: 30px;
+  }
+  
+  .more {
+    &:last-of-type {
+      @include rem-fallback(padding-bottom, $spacing-unit);
+      border-bottom: 1px solid $grey-color-light;
+    }
+   
   }
   
   // These home page styles are unnecessarily cumbersome
@@ -72,6 +80,12 @@
   }
   
   .art {
+    @include rem-fallback(margin-bottom, $spacing-unit);
+    
+    @include media-query($on-laptop) {
+      margin-bottom: 0;
+    }
+    
     .post-list {
       display: flex;
       align-items: center;
