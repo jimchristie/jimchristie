@@ -55,3 +55,34 @@
     }
   }
 }
+
+
+////////////// Individual pages
+
+.work-header {
+  display: flex;
+  
+  @include media-query($on-palm) {
+    display: block;
+  }
+  
+  .title-company-dates {
+    @include rem-fallback(margin-left, $spacing-unit);
+    @include rem-fallback(margin-top, $quarter-spacing);
+    
+    @include media-query($on-palm) {
+      margin-left: 0;
+    }
+    
+    .post-meta {
+      @include media-query($on-palm) {
+        text-align: center;
+      }
+    }
+  }
+  
+  .job-title {
+    margin-bottom: 0;
+  }
+  
+}

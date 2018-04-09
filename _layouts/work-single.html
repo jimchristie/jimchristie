@@ -3,16 +3,31 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+  <header class="work-header">
+    {% if page.logo %}
+     <div class = "logo">
+        <img src="{{ page.logo }}">
+    </div>
+    {% endif %}
+    <div class="title-company-dates">
+      <h2 itemprop="name headline" class="job-title">{{ page.title | escape }}</h2>
+      <h3 class = "company">
+        {{ page.company }}
+      </h3>
+      <p class="post-meta">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+        {% assign year_format = site.minima.date_format | default: "%Y" %}
+        {% capture endYear %}{{ page.endDate | date: year_format }}{% endcapture %}
+        {{ page.startDate | date: date_format }} - 
+        {% if endYear != '9999' %}
+          {{ page.endDate | date: date_format }}
+        {% else %}
+          Present
+        {% endif %}
+      </p>
+    </div>
+    
+      
   </header>
   <div class="post-content e-content" itemprop="articleBody">
     {% if page.featuredImage.image != '' %}
