@@ -44,6 +44,14 @@
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
       }
     }
+    
+    .snippet-container {
+      @include rem-fallback(margin-left, $spacing-unit);
+      
+      @include media-query($on-palm) {
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -53,6 +61,14 @@
   &.work {
     border-top: 1px solid $grey-color-light;
     padding-top: 30px;
+  }
+  
+  &.work {
+    .section-title {
+      @include media-query($on-palm) {
+        text-align: center;
+      }
+    }
   }
   
   .more {
