@@ -170,6 +170,12 @@
   }
 }
 
+img {
+  &.featured {
+    max-width: 30vh;
+    max-height: 40vh;
+  }
+}
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;

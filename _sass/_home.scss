@@ -71,6 +71,15 @@
     }
   }
   
+  .post-list {
+    margin-bottom: 0;
+    @include rem-fallback(margin-top, $double-spacing);
+    
+    .post {
+      margin-bottom: 0;
+    }
+  }
+  
   .more {
     &:last-of-type {
       @include rem-fallback(padding-bottom, $spacing-unit);
