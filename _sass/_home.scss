@@ -30,18 +30,27 @@
     padding: 0;
     
     header,
-    div,
     ul,
+    .post-list,
+//     .post-content,
+//     div,
+//     article,
+//     section
     .more {
-      max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-      max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+      max-width: -webkit-calc(#{$content-width} - #{$double-spacing});
+      max-width:         calc(#{$content-width} - #{$double-spacing});
       margin-right: auto;
       margin-left: auto;
+      @include rem-fallback(margin-bottom, $spacing-unit);
       @extend %clearfix;
 
       @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+      }
+
+      @include media-query($on-palm) {
+        padding: 0;
       }
     }
     
@@ -56,14 +65,20 @@
 }
 
 .home {
+  
+  section {
+    &:last-child {
+      .more {
+        margin-bottom: 0;
+      }
+    }
+  }
   &.post,
   &.art,
   &.work {
     border-top: 1px solid $grey-color-light;
     padding-top: 30px;
-  }
-  
-  &.work {
+    
     .section-title {
       @include media-query($on-palm) {
         text-align: center;
@@ -72,20 +87,12 @@
   }
   
   .post-list {
-    margin-bottom: 0;
-    @include rem-fallback(margin-top, $double-spacing);
+    @include rem-fallback(margin-top, $spacing-unit);
+    @include rem-fallback(margin-bottom, $spacing-unit);
     
     .post {
       margin-bottom: 0;
     }
-  }
-  
-  .more {
-    &:last-of-type {
-      @include rem-fallback(padding-bottom, $spacing-unit);
-      border-bottom: 1px solid $grey-color-light;
-    }
-   
   }
   
   // These home page styles are unnecessarily cumbersome

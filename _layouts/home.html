@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="home about">
+<section class="home about">
 
   {% if page.title %}
   <header class="post-header">
@@ -15,7 +15,7 @@ layout: default
       {{ site.description }}
     </div>
   </div>
-</article>
+</section>
 {% assign featured_posts = site.posts | where:"featured", true %}
 {% assign featured_art = site.art | where:"featured", true | sort: date | reverse %}
 
@@ -23,21 +23,22 @@ layout: default
 <!--------------------- featured posts --------------------------------->
 
 {% if featured_posts.size > 0 %}
-<article class="home post">
-    <h3 class="section-title">
-      Recent Blog Post
-    </h3>
-    <ul class="post-list">
-      {% for post in featured_posts limit:1 %}
-        {% include blog-index-snippet.html %}
-      {% endfor %}
-    </ul>
-</article>
+<section class="home post">
+  <h3 class="section-title">
+    Recent Blog Post
+  </h3>
+  <ul class="post-list blog-index">
+    {% for post in featured_posts limit:1 %}
+      {% include blog-index-snippet.html %}
+    {% endfor %}
+  </ul>
+  <h4 class="more">
+    <a href="/blog">All Blog Posts</a>
+  </h4>
+</section>
 {% endif %}
 
-<h4 class="more">
-  <a href="/blog">All Blog Posts</a>
-</h4>
+
 
 
 
@@ -60,7 +61,7 @@ layout: default
 {% endfor %}
 
 {% if site.work.size > 0 and numberOfCurrentJobs > 0 %}
-<article class="home work">
+<section class="home work">
   <h3 class="section-title">
     Current Job{% if numberOfCurrentJobs > 1 %}s{% endif %}
   </h3>
@@ -72,12 +73,11 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-</article>
+  <h4 class="more">
+    <a href="/work">Full Job History</a>
+  </h4>
+</section>
 {% endif %}
-
-<h4 class="more">
-  <a href="/work">Full Job History</a>
-</h4>
 
 
 <!-- 
@@ -103,9 +103,8 @@ layout: default
     </div>
     {% endfor %}
   </div>
+  <h4 class="more">
+    <a href="/art">View Gallery</a>
+  </h4>
 </section>
 {% endif %}
-
-<h4 class="more">
-  <a href="/art">View Gallery</a>
-</h4>
