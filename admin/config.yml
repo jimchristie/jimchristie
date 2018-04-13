@@ -197,13 +197,24 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Start Date", name: "startDate", widget: "date", format: "YYYY-MM-DD"}
       - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD"}
       - {label: "Web Link", name: "link", widget: "string", required: false}
-      - {label: "Training Provider", name: "provider", widget: "string", required: false}
+      - label: "Training Provider"
+        name: "provider"
+        widget: "object"
+        required: false
+        fields:
+          - {label: "Company Name", name: "name", widget: "string"}
+          - {label: "Link", name: "link", widget: "string", required: false}
       - label: "Trainers" 
         name: "trainers"
         widget: "list"
         required: false
         fields: 
-          - {label: "Trainer", name: "Trainer", widget: "string"}
+          - label: "Trainer"
+            name: "Trainer"
+            widget: object
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Link", name: "link", widget: "string", required: false}
         
     
   - name: "skills"
