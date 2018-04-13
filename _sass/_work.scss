@@ -1,4 +1,18 @@
 .work {
+  
+  section {
+    @include rem-fallback(margin-top, $double-spacing);
+    @include rem-fallback(padding-top, $double-spacing);
+    border-top: 1px solid $grey-color-light;
+    
+    &:first-child {
+      margin-top: 0;
+      padding-top: none;
+      border-top: none;
+      
+    }
+  }
+  
   li {
     &:last-child {
       .logo-snippet-container {
@@ -57,6 +71,55 @@
   }
 }
 
+
+////////////////////////  Certifications //////////////////////////////
+
+.certifications {
+  display: flex;
+  justify-content: center;
+  
+  @include media-query($on-laptop) {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    
+    li {
+      width: 50%;
+      margin: auto;
+      
+      @include media-query ($on-laptop) {
+        @include rem-fallback(margin-bottom, $spacing-unit);
+      }
+    }
+  }
+  
+  @include media-query($on-palm) {
+    display: block;
+    
+    li {
+      width: 100%;
+    }
+  }
+  
+  .logo {
+    margin: auto;
+    @include rem-fallback(height, 125px);
+    text-align: center;
+    width: auto;
+    
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .certification-title {
+    text-align: center;
+  }
+  
+  .post-meta {
+    text-align: center;
+  }
+}
 
 .certification-header {
   text-align: center;

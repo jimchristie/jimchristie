@@ -2,23 +2,19 @@
 layout: default
 ---
 
-{% assign date_format = site.minima.date_format | default: "%B, %Y" %}
+
 {% assign year_format = site.minima.date_format | default: "%Y" %}
 
-<div class="work collection-index">
+<section class="work collection-index">
   {% if page.title %}
     <h1 class="page-heading">{{ page.title }}</h1>
   {% endif %}
-  
   {% if site.work.size > 0 %}
-  
-  {% assign curent = site.work | sort:'startDate' | reverse %}
-  {% assign old = site.work | sort:'endDate' | reverse %}
-  
-  <h2>
-    Job History
-  </h2>
-  
+    {% assign curent = site.work | sort:'startDate' | reverse %}
+    {% assign old = site.work | sort:'endDate' | reverse %}
+    <h2>
+      Job History
+    </h2>
     <ul class="post-list">
       {% for post in curent %}
         {% capture endYear %}{{ post.endDate | date: year_format }}{% endcapture %}
@@ -35,49 +31,43 @@ layout: default
       {% endfor %}
     </ul>
   {% endif %}
-
-</div>
+</section>
 
 {% if site.certifications.size > 0 %}
-  <div class="certifications collection-index">
+{% assign date_format = site.minima.date_format | default: "%B %d, %Y" %}
+{% assign sorted_certs = site.certifications | sort:'certificationDate' | reverse %}
+  <section class="collection-index">
     <h2 class="certification-header">
       Certifications
     </h2>
     <ul class="post-list certifications">
-      {% for post in site.certifications %}
+      {% for post in sorted_certs %}
         <li>
-          <h3 class="certification-title">
-            {% if post.link %}<a href="{{ certification.link}}" target="_blank">{% endif %}
-            {{ post.title }}
-            {% if post.link %}</a>{% endif %}
-          </h3>
-          {% if post.certificationDate or post.expirationDate %}
-            <p span class="post-meta">
-              {% if post.certificationDate %}
-                <span class="certification-date">
-                  {% if post.expirationDate %}
-                  {% else %}
-                    Certification Date: 
-                  {% endif %}
-                  {{ post.certificationDate | date:date_format }}
-                </span>
-              {% endif %}
-              {% if post.certificationDate and post.expirationDate %}
-               - 
-              {% endif %}
-              {% if post.expirationDate %}
-                <span class="expiration-date">
-                  {% if post.certificationDate %}
-                  {% else %}
-                    Expires: 
-                  {% endif %}
-                  {{ post.expirationDate | date:date_format }}
-                </span>
-              {% endif %}
-            </p>
+          {% if post.logo %}
+            <div class="logo">
+              <a href="{{ post.link }}" target="_blank">
+                <img src="{{ post.logo }}" alt="{{ post.title }} logo" />
+              </a>
+            </div>
           {% endif %}
+          <div class="title-meta">
+            <h3 class="certification-title">
+              {% if post.link %}<a href="{{ post.link}}" target="_blank">{% endif %}
+              {{ post.title }}
+              {% if post.link %}</a>{% endif %}
+            </h3>
+            {% if post.certificationDate or post.expirationDate %}
+              <p span class="post-meta">
+                {% if post.certificationDate %}
+                  <span class="certification-date">
+                    {{ post.certificationDate | date:date_format }}
+                  </span>
+                {% endif %}                          
+              </p>
+            {% endif %}
+          </div>
       </li>
       {% endfor %}
     </ul>
-  </div>
+  </section>
 {% endif %}

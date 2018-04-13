@@ -172,8 +172,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Certification", name: "title", widget: "string"}
       - {label: "Certification Authority", name: "authority", widget: "string"}
       - {label: "Logo", name: "logo", widget: "image", required: false}
-      - {label: "Certification Date", name: "certificationDate", widget: "date", default: "", format: "MMM Do YY", required: false}
-      - {label: "Expiration Date", name: "expirationDate", widget: "date", default: "", format: "MMM Do YY", required: false}
+      - {label: "Certification Date", name: "certificationDate", widget: "date", default: "", format: "YYYY-MM-DD", required: false}
+      - {label: "Expiration Date", name: "expirationDate", widget: "date", default: "", format: "YYYY-MM-DD", required: false}
       - {label: "Web Link", name: "link", widget: "string", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
