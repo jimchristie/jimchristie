@@ -2,7 +2,12 @@
 title: Train the Trainer
 startDate: '2018-04-18'
 endDate: '2018-04-18'
-link: 'http://bowperson.com/training-from-the-back-of-the-room/'
+link: 'https://www.agile42.com/en/coaching/coach-coach-train-trainer-program/'
+description: >-
+  This program will allow a selected number of candidates to be developed as
+  agile trainers over a long period of time. The approach will require full
+  immersion both for theory and practice as it is an accelerated approach
+  similar to incubation.
 provider:
   link: 'https://www.agile42.com/en/'
   name: Agile 42
