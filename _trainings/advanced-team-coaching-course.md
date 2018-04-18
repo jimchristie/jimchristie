@@ -14,5 +14,11 @@ trainers:
   - Trainer:
       link: 'https://www.linkedin.com/in/dhavalpanchal/'
       name: Dhaval Panchal
+  - Trainer:
+      link: 'https://www.linkedin.com/in/daniel-m-lynn/'
+      name: Daniel Lynn
+  - Trainer:
+      link: 'https://www.linkedin.com/in/richarddolman/'
+      name: Richard Dolman
 ---
 
