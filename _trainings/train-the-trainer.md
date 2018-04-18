@@ -1,7 +1,7 @@
 ---
 title: Train the Trainer
-startDate: '2018-04-18'
-endDate: '2018-04-18'
+startDate: '2017-08-17'
+endDate: '2017-11-13'
 link: 'https://www.agile42.com/en/coaching/coach-coach-train-trainer-program/'
 description: >-
   This program will allow a selected number of candidates to be developed as
