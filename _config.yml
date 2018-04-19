@@ -67,6 +67,12 @@ collections:
   
   certifications:
     output: false
+  
+  trainings:
+    output: false
+  
+  conferences:
+    output: false
 
 defaults:
   - scope:

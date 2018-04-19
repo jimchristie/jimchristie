@@ -28,6 +28,7 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width:    1200px !default;
 
+$tiny:             $content-width / 4;
 $on-palm:          $content-width / 2 !default;
 $on-tablet:        $content-width * 0.75;
 $on-laptop:        $content-width !default;

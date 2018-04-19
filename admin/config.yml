@@ -212,7 +212,7 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         fields: 
           - label: "Trainer"
-            name: "Trainer"
+            name: "trainer"
             widget: object
             fields:
               - {label: "Name", name: "name", widget: "string"}

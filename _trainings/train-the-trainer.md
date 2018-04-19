@@ -12,10 +12,10 @@ provider:
   link: 'https://www.agile42.com/en/'
   name: Agile 42
 trainers:
-  - Trainer:
+  - trainer:
       link: 'https://www.linkedin.com/in/daniel-m-lynn/'
       name: Daniel Lynn
-  - Trainer:
+  - trainer:
       link: 'https://www.linkedin.com/in/dhavalpanchal/'
       name: Dhaval Panchal
 ---

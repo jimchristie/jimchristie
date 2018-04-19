@@ -78,6 +78,10 @@
   display: flex;
   justify-content: center;
   
+  h2 {
+    text-align: center;
+  }
+  
   @include media-query($on-laptop) {
     flex-wrap: wrap;
     margin-bottom: 0;
@@ -121,10 +125,6 @@
   }
 }
 
-.certification-header {
-  text-align: center;
-}
-
 ////////////// Individual pages
 
 .work-header {
@@ -153,4 +153,59 @@
     margin-bottom: 0;
   }
   
+}
+
+//////////////////////////// Trainings /////////////////////////////////
+
+.training {
+  @include rem-fallback(margin-top, $double-spacing);
+  
+  h3 {
+    @include media-query($on-palm) {
+      text-align: center;
+    }
+  }
+  
+  .post-meta {
+    margin-bottom: 0;
+  }
+}
+
+.trainers {
+  
+  h4 {
+    text-align: center;
+  }
+  ul {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    
+    @include rem-fallback(max-width, $tiny);
+    
+    @include media-query($tiny) {
+      display: block;
+    }
+  }
+}
+
+.trainer {
+  list-style: none;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  
+  &:first-child {
+    margin-left: 0;
+  }
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  @include media-query($tiny) {
+    margin: 0;
+  }
 }

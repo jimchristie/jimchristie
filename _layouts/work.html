@@ -34,8 +34,8 @@ layout: default
 </section>
 
 {% if site.certifications.size > 0 %}
-{% assign date_format = site.minima.date_format | default: "%B %d, %Y" %}
-{% assign sorted_certs = site.certifications | sort:'certificationDate' | reverse %}
+  {% assign date_format = site.minima.date_format | default: "%B %d, %Y" %}
+  {% assign sorted_certs = site.certifications | sort:'certificationDate' | reverse %}
   <section class="collection-index">
     <h2 class="certification-header">
       Certifications
@@ -51,7 +51,7 @@ layout: default
             </div>
           {% endif %}
           <div class="title-meta">
-            <h3 class="certification-title">
+            <h3 class="certification-title text-align-center">
               {% if post.link %}<a href="{{ post.link}}" target="_blank">{% endif %}
               {{ post.title }}
               {% if post.link %}</a>{% endif %}
@@ -67,6 +67,78 @@ layout: default
             {% endif %}
           </div>
       </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+{% if site.trainings.size > 0 %}
+  {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+  <section class="training-index">
+    <h2 class="training-header text-align-center">
+      Trainings
+    </h2>
+    <ul class="post-list trainings">
+      {% for training in site.trainings %}
+        <li class="training">
+          <h3>
+            {% if training.link %}
+              <a href="{{ training.link }}" target="_blank">
+                {{ training. title }}
+              </a>
+            {% else %}
+              {{training.title}}
+            {% endif %}
+          </h3>
+          <p class="post-meta">
+            Provided by: <a href="{{ training.provider.link }}" target="_blank">
+              {{ training.provider.name }}
+            </a><br>
+            {% if training.startDate == training.endDate %}
+              {{ training.startDate | date: date_format }}
+            {% else %}
+              {{ training.startDate | date: date_format }} - {{training.endDate | date: date_format }}
+            {% endif %}
+          </p>
+          <div class="training-description">
+              {{ training.description | markdownify }}
+          </div>
+          <div class="trainers">
+            <h4>
+              Trainer{% if training.trainers.size > 1 %}s{% endif %}
+            </h4>
+            <ul>
+              {% for trainer in training.trainers %}
+                <li class="trainer">
+                  {% if trainer.trainer.link %}
+                    <a href="{{ trainer.trainer.link }}" target="_blank">
+                      {{ trainer.trainer.name }}
+                    </a>
+                  {% else %}
+                    {{ trainer.trainer.name }}
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+{% if site.conferences.size > 0 %}
+  <section class="conference-index">
+    <h2 class="conference-header text-align-center">
+      Conferences
+    </h2>
+    <ul class="post-list conferences">
+      {% for conference in site.conferences %}
+        <li>
+          <h3>
+            {{conference.title}}
+          </h3>
+        </li>
       {% endfor %}
     </ul>
   </section>
