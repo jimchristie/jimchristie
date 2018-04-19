@@ -188,6 +188,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD"}
       - {label: "Web Link", name: "link", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: false}
+      - {label: "Logo", name: "logo", widget: "image", required: false}
     
   - name: "trainings"
     label: "Training"
