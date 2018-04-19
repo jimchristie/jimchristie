@@ -9,5 +9,6 @@ description: >-
   level, our hands-on, in-depth workshops have you covered. Plus, Agile Dev West
   is held in conjunction with Better Software West and DevOps West conferences,
   allowing you to choose from three distinct programs.
+logo: /img/uploads/agile-dev-west-logo.png
 ---
 
