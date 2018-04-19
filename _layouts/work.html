@@ -15,7 +15,7 @@ layout: default
     <h2>
       Job History
     </h2>
-    <ul class="post-list">
+    <ul class="post-list work-index">
       {% for post in curent %}
         {% capture endYear %}{{ post.endDate | date: year_format }}{% endcapture %}
         {% if endYear == '9999' %}
@@ -79,7 +79,8 @@ layout: default
       Trainings
     </h2>
     <ul class="post-list trainings">
-      {% for training in site.trainings %}
+      {% assign sorted_trainings = site.trainings | sort:"endDate" | reverse %}
+      {% for training in sorted_trainings %}
         <li class="training">
           <h3>
             {% if training.link %}
@@ -91,7 +92,7 @@ layout: default
             {% endif %}
           </h3>
           <p class="post-meta">
-            Provided by: <a href="{{ training.provider.link }}" target="_blank">
+            Provided by <a href="{{ training.provider.link }}" target="_blank">
               {{ training.provider.name }}
             </a><br>
             {% if training.startDate == training.endDate %}
@@ -133,13 +134,16 @@ layout: default
       Conferences
     </h2>
     <ul class="post-list conferences">
-      {% for conference in site.conferences %}
+      {% assign sorted_conferences = site.conferences | sort:"endDate" | reverse %}
+      {% for conference in sorted_conferences %}
         <li>
-          <div class="title">
+          <div class="title-year">
             {% if conference.logo %}
-              <div>
-                <img src="{{ conference.logo }}" alt="{{ conference.title }} logo" />
-              </div>
+              <h3 class="logo">
+                <a href="{{ conference.link }}" target="_blank">
+                  <img src="{{ conference.logo }}" alt="{{ conference.title }} logo" />
+                </a>
+              </h3>
             {% else %}
               <h3>
                 <a href="{{ conference.link }}" target="_blank">
@@ -147,10 +151,13 @@ layout: default
                 </a>
               </h3>
             {% endif %}
+            <p class="post-meta">
+              {{ conference.startDate | date: year_format }}
+            </p>
           </div>
           {% if conference.description %}
             <div class="description">
-              
+              {{ conference. description | markdownify }}
             </div>
           {% endif %}
         </li>

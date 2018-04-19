@@ -46,19 +46,22 @@
     @include rem-fallback(margin-bottom, $half-spacing);
   }
   
-  .logo {
-    @include rem-fallback(width, 150px);
-    
-    @include media-query($on-tablet){
-      @include rem-fallback(width, 125px);
-    }
-    
-    @include media-query($on-palm){
-      @include rem-fallback(width, 100px);
-      margin: 0 auto;
-      @include rem-fallback(margin-bottom, $half-spacing);
+  .work-index {
+    .logo {
+      @include rem-fallback(width, 150px);
+
+      @include media-query($on-tablet){
+        @include rem-fallback(width, 125px);
+      }
+
+      @include media-query($on-palm){
+        @include rem-fallback(width, 100px);
+        margin: 0 auto;
+        @include rem-fallback(margin-bottom, $half-spacing);
+      }
     }
   }
+  
 }
 
 .snippet-container {
@@ -169,6 +172,10 @@
   .post-meta {
     margin-bottom: 0;
   }
+  
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .trainers {
@@ -207,5 +214,30 @@
   
   @include media-query($tiny) {
     margin: 0;
+  }
+}
+
+////////////////// Conferences ///////////////////////////
+
+.conferences {
+  
+  .title-year {
+    align-items: flex-end;
+  }
+  
+  .logo {
+    @include rem-fallback(max-width, 300px);
+  }
+  
+  .post-meta {
+    margin-bottom: 0;
+  }
+  
+  li {
+    @include rem-fallback(margin-top, $double-spacing);
+    
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
