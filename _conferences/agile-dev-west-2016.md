@@ -1,5 +1,5 @@
 ---
-title: Agile Dev West 2016
+title: Agile Dev West
 startDate: '2016-06-04'
 endDate: '2016-06-10'
 link: 'https://adcwest.techwell.com/'

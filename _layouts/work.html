@@ -135,9 +135,24 @@ layout: default
     <ul class="post-list conferences">
       {% for conference in site.conferences %}
         <li>
-          <h3>
-            {{conference.title}}
-          </h3>
+          <div class="title">
+            {% if conference.logo %}
+              <div>
+                <img src="{{ conference.logo }}" alt="{{ conference.title }} logo" />
+              </div>
+            {% else %}
+              <h3>
+                <a href="{{ conference.link }}" target="_blank">
+                  {{ conference.title }}
+                </a>
+              </h3>
+            {% endif %}
+          </div>
+          {% if conference.description %}
+            <div class="description">
+              
+            </div>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>

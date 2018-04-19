@@ -181,6 +181,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "conferences"
     label: "Conference"
     folder: "_conferences"
+    slug: "{{year}}-{{slug}}"
     create: true 
     fields:
       - {label: "Conference", name: "title", widget: "string"}
