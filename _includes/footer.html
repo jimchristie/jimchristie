@@ -3,31 +3,71 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading"><a class="inherit" href="{{ site.url }}">{{ site.title | escape }}</a></h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
+        <h3>
+          Pages
+        </h3>
+        <ul class="page-list">
+          {% assign sorted_pages = site.pages | sort:"order" %}
+          <li>
+            <a href="/">
+              Home
+            </a>
+          </li>
+          {% for page in sorted_pages %}
+            {% if page.title %}
+              <li>
+                <a href="{{ page.url | relative_url }}" style="text-decoration: none;">
+                  {{ page.title }}
+                </a>
+              </li>
             {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+          {% endfor %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-        {% include social.html %}
+        <h3>
+          <a href="/art">Art</a>
+        </h3>
+        <ul>
+          {% assign sorted_art = site.art | sort:"date" | reverse %}
+          {% for art in sorted_art | limit:5 %}
+            <li>
+              <a href="{{ art.url | relative_url }}">
+                {{art.title}}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{% if page.title %}{{ site.description | escape }}{% endif %}</p>
+        <h3>
+          Social Media
+        </h3>
+        {% include social.html %}
       </div>
+      
+      <div class="footer-col footer-col-4">
+        <h3>
+          <a href="/work">
+            Work
+          </a>
+        </h3>
+        <ul>
+          <li><a href="/work#job-history">Job History</a></li>
+          <li><a href="/work#certifications">Certifications</a></li>
+          <li><a href="/work#trainings">Additional Training</a></li>
+          <li><a href="/work#conferences">Conferences</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="site-description">
+        <p>{% if page.title %}{{ site.description | escape }}{% endif %}</p>
     </div>
 
   </div>

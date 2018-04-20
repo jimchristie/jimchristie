@@ -7,7 +7,7 @@
     
     &:first-child {
       margin-top: 0;
-      padding-top: none;
+      padding-top: 0;
       border-top: none;
       
     }
@@ -74,6 +74,9 @@
 
 
 ////////////////////////  Certifications //////////////////////////////
+.certification-header {
+  text-align: center;
+}
 
 .certifications {
   display: flex;
@@ -81,6 +84,10 @@
   
   h2 {
     text-align: center;
+  }
+  
+  li {
+    width: 100%;
   }
   
   @include media-query($on-laptop) {
@@ -251,6 +258,10 @@
   .logo {
     width: 100%;
     @include rem-fallback(margin-right, $spacing-unit);
+    
+    @include media-query($on-palm) {
+      margin-right: auto;
+    }
   }
   
   .meta-description-container {

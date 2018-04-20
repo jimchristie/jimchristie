@@ -21,9 +21,9 @@
     
       <ul class="nav-list">
             <li class="nav-item"><a class="page-link home-link" href="/">Home</a></li>
-        {% for page in sorted_pages %}
-          {% if page.title %}
-            <li class="nav-item"><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
+        {% for item in sorted_pages %}
+          {% if item.title %}
+            <li class="nav-item{% if item.title == page.title %} current-page{% endif %}"><a class="page-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
