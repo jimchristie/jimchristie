@@ -65,7 +65,7 @@ layout: default
   <h3 class="section-title">
     Current Job{% if numberOfCurrentJobs > 1 %}s{% endif %}
   </h3>
-  <ul class="post-list">
+  <ul class="post-list work-index">
     {% for post in sorted_work %}
     {% capture endYear %}{{ post.endDate | date: year_format }}{% endcapture %}
       {% if endYear == '9999' %}

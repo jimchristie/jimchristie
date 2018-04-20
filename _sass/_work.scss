@@ -46,19 +46,17 @@
     @include rem-fallback(margin-bottom, $half-spacing);
   }
   
-  .work-index {
-    .logo {
-      @include rem-fallback(width, 150px);
+  .logo {
+    @include rem-fallback(width, 150px);
 
-      @include media-query($on-tablet){
-        @include rem-fallback(width, 125px);
-      }
+    @include media-query($on-tablet){
+      @include rem-fallback(width, 125px);
+    }
 
-      @include media-query($on-palm){
-        @include rem-fallback(width, 100px);
-        margin: 0 auto;
-        @include rem-fallback(margin-bottom, $half-spacing);
-      }
+    @include media-query($on-palm){
+      @include rem-fallback(width, 100px);
+      margin: 0 auto;
+      @include rem-fallback(margin-bottom, $half-spacing);
     }
   }
   
@@ -240,4 +238,23 @@
       margin-top: 0;
     }
   }
+}
+
+
+.has-logo {
+  display: flex;
+  
+  @include media-query($on-tablet) {
+    display: block;
+  }
+
+  .logo {
+    width: 100%;
+    @include rem-fallback(margin-right, $spacing-unit);
+  }
+  
+  .meta-description-container {
+    width: 100%;
+  }
+
 }

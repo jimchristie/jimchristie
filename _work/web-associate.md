@@ -5,7 +5,7 @@ snippet: >-
   As one of two web associates at the Daniel Boone Regional Library, I was
   jointly responsible for designing and coding all of the library’s web
   applications, both internal and external.
-startDate: 2015-08-13
+startDate: 2013-08-15
 endDate: 2015-06-12
 link: 'http://www.dbrl.org'
 logo: /img/uploads/dbrl-logo.jpg

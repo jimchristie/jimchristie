@@ -10,7 +10,7 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {% endif %}
   {% if site.work.size > 0 %}
-    {% assign curent = site.work | sort:'startDate' | reverse %}
+    {% assign curent = site.work | sort:'company' | sort:'startDate' | reverse %}
     {% assign old = site.work | sort:'endDate' | reverse %}
     <h2>
       Job History
@@ -136,30 +136,30 @@ layout: default
     <ul class="post-list conferences">
       {% assign sorted_conferences = site.conferences | sort:"endDate" | reverse %}
       {% for conference in sorted_conferences %}
-        <li>
-          <div class="title-year">
-            {% if conference.logo %}
-              <h3 class="logo">
-                <a href="{{ conference.link }}" target="_blank">
-                  <img src="{{ conference.logo }}" alt="{{ conference.title }} logo" />
-                </a>
-              </h3>
-            {% else %}
-              <h3>
-                <a href="{{ conference.link }}" target="_blank">
-                  {{ conference.title }}
-                </a>
-              </h3>
-            {% endif %}
-            <p class="post-meta">
-              {{ conference.startDate | date: year_format }}
-            </p>
-          </div>
+        <li class="conference{% if conference.logo %} has-logo{% endif %}">
+          {% if conference.logo %}
+            <h3 class="logo">
+              <a href="{{ conference.link }}" target="_blank">
+                <img src="{{ conference.logo }}" alt="{{ conference.title }} logo" />
+              </a>
+            </h3>
+          {% else %}
+            <h3>
+              <a href="{{ conference.link }}" target="_blank">
+                {{ conference.title }}
+              </a>
+            </h3>
+          {% endif %}
+          {% if conference.logo %}<div class="meta-description-container">{% endif %}
+          <p class="post-meta">
+            {{ conference.startDate | date: year_format }}
+          </p>
           {% if conference.description %}
             <div class="description">
               {{ conference. description | markdownify }}
             </div>
           {% endif %}
+          {% if conference.logo %}<div class="meta-description-container">{% endif %}
         </li>
       {% endfor %}
     </ul>
