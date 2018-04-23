@@ -1,5 +1,8 @@
 <header class="site-header" role="banner">
-
+  
+  
+  
+  
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign sorted_pages = site.pages | sort:"order" %}
@@ -15,6 +18,8 @@
     </h1>
 
     {% if sorted_pages %}
+    {% assign section = page.url | split, "/" %}
+    {% assign section = section [1] %}
     <div class="nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger">
       <label for="nav-trigger"><span class="hamburger"><span class="fas fa-bars"></span>&nbsp;Menu</span><span class="close"><span class="fas fa-times"></span>&nbsp;Close</span></label>
@@ -23,7 +28,8 @@
             <li class="nav-item"><a class="page-link home-link" href="/">Home</a></li>
         {% for item in sorted_pages %}
           {% if item.title %}
-            <li class="nav-item{% if item.title == page.title %} current-page{% endif %}"><a class="page-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
+            {% assign lowerCaseTitle = item.title | downcase %}
+            <li class="nav-item{% if lowerCaseTitle == section %} current-section{% endif %}"><a class="page-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
