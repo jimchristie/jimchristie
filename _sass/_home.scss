@@ -190,22 +190,3 @@
     }
   }
 }
-
-.more {
-  
-  @include media-query($on-laptop){
-    padding-left: $spacing-unit * 2;
-    padding-right: $spacing-unit * 2;
-  }
-  
-  @include media-query($on-tablet){
-    padding-left: $spacing-unit;
-    padding-right: $spacing-unit;
-  }
-  
-  @include media-query($on-palm){
-    padding-left: $spacing-unit / 2;
-    padding-right: $spacing-unit / 2;
-  }
-  
-}
