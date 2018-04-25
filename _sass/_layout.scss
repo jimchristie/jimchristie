@@ -4,15 +4,18 @@
 .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
-//   min-height: $double-spacing;
-  padding-top: $half-spacing;
-  padding-bottom: $half-spacing;
+  @include rem-fallback(height, 100px);
   
+  .site-title {
+    @include rem-fallback(line-height, 100px);
+  }
   .header-image {
     border-radius: 50%; 
-    @include rem-fallback(height, 65px); 
-    @include rem-fallback(width, 65px); 
-    vertical-align: middle; 
+    @include rem-fallback(height, 70px); 
+    @include rem-fallback(width, 70px); 
+    vertical-align: top; 
+    @include rem-fallback(padding-top, $half-spacing);
+    @include rem-fallback(padding-bottom, $half-spacing);
   }
   
   .wrapper {

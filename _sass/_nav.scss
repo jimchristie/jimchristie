@@ -3,19 +3,49 @@
 .nav {
   margin: 0;
   position: absolute;
-  @include rem-fallback(right, 15px);
-  @include rem-fallback(top, 18px);
+  right: 0;
+  top: 0;
+  height: 100%;
   @include rem-fallback(font-size, 20px);
+  
+  ul {
+    height: 100%;
+  }
+  
+  li {
+    @include rem-fallback(padding-left, $half-spacing);
+    @include rem-fallback(padding-right, $half-spacing);
+    
+    &:first-child {
+      padding: 0;
+    }
+    
+  }
+  
+  a {
+    display: block;
+//     @include rem-fallback(padding-top, 35px);
+//     @include rem-fallback(padding-bottom, 35px);
+    @include rem-fallback(line-height, 100px);
+  }
+  
+  .home-link {
+    display: none;
+    
+    @include media-query($on-palm) {
+      display: block;
+    }
+  }
   
   label {
     display: none;
   }
 }
 
-// .current-section {
-//   background-color: $grey-color-dark;
-//   color: $white;
-// }
+.current-section {
+  background-color: $grey-color-dark;
+  color: $white;
+}
 
 .nav-trigger {
   display: none;
@@ -23,11 +53,11 @@
 
 .nav-list {
   display: flex;
+  margin-left: 0;
 }
 .nav-item {
   display: block;
   list-style-type: none;
-  margin-left: $spacing-unit;
   
   @include media-query($on-palm){
     margin-left: 0;
