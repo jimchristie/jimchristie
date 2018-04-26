@@ -12,6 +12,19 @@
     height: 100%;
   }
   
+  
+  .current-section {
+    background-color: $grey-color-dark;
+    color: $white;
+    padding: 0;
+    @include rem-fallback(min-width, 100px);
+
+    a {
+      text-align: center;
+    }
+  }
+  
+  
   li {
     @include rem-fallback(padding-left, $half-spacing);
     @include rem-fallback(padding-right, $half-spacing);
@@ -19,7 +32,6 @@
     &:first-child {
       padding: 0;
     }
-    
   }
   
   a {
@@ -40,11 +52,6 @@
   label {
     display: none;
   }
-}
-
-.current-section {
-  background-color: $grey-color-dark;
-  color: $white;
 }
 
 .nav-trigger {

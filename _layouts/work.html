@@ -6,9 +6,6 @@ layout: default
 {% assign year_format = site.minima.date_format | default: "%Y" %}
 
 <section class="work collection-index">
-  {% if page.title %}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {% endif %}
   {% if site.work.size > 0 %}
     {% assign curent = site.work | sort:'company' | sort:'startDate' | reverse %}
     {% assign old = site.work | sort:'endDate' | reverse %}
