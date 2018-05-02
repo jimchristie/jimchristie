@@ -6,16 +6,19 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign sorted_pages = site.pages | sort:"order" %}
-    {% if page.title %}
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
-        <img class="header-image" src="/img/uploads/logo.jpg"/> 
-      </a>
-    {% endif %}
-    <h1 class="site-title">
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
-         <span>{{ site.title | escape }}</span>
-      </a>
-    </h1>
+    <div class="image-title">
+      {% if page.title %}
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
+          <img class="header-image" src="/img/uploads/logo.jpg"/> 
+        </a>
+      {% endif %}
+      <h1 class="site-title">
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
+           <span>{{ site.title | escape }}</span>
+        </a>
+      </h1>
+    </div>
+    
 
     {% if sorted_pages %}
     {% assign section = page.url | split, "/" %}

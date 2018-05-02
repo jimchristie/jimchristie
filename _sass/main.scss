@@ -14,12 +14,12 @@ $double-spacing:   $spacing-unit * 2;
 $quarter-spacing:  $spacing-unit / 4;
 
 $black:            #111;
+$white:            #fefefe;
 $true-black:       #000;
 $text-color:       $black;
-$background-color: #fdfdfd !default;
+$background-color: $white;
 $lightbox-background: rgba(0, 0, 0, 0.93);
 $brand-color:      #2a7ae2 !default;
-$white:            #fff;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 25%) !default;

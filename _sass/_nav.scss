@@ -8,16 +8,38 @@
   height: 100%;
   @include rem-fallback(font-size, 20px);
   
+  @include media-query($on-tablet) {
+    position: static;
+  }
+  
+  @include media-query($on-tablet){
+    width: 100vw;
+    @include rem-fallback(margin-left, -30px);
+    border-top: 1px solid $grey-color-light;
+  }
+  
+  @include media-query($on-palm){
+    position: absolute;
+    width: auto;
+    margin-left: 0;
+    border-top: none;
+  }
+  
   ul {
     height: 100%;
   }
-  
   
   .current-section {
     background-color: $grey-color-dark;
     color: $white;
     padding: 0;
     @include rem-fallback(min-width, 100px);
+    flex-grow: 0;
+    
+    @include media-query($on-palm) {
+      background-color: $white;
+      color: $black;
+    }
 
     a {
       text-align: center;
@@ -31,13 +53,12 @@
     
     &:first-child {
       padding: 0;
+      flex-grow: 0;
     }
   }
   
   a {
     display: block;
-//     @include rem-fallback(padding-top, 35px);
-//     @include rem-fallback(padding-bottom, 35px);
     @include rem-fallback(line-height, 100px);
   }
   
@@ -61,10 +82,26 @@
 .nav-list {
   display: flex;
   margin-left: 0;
+  
+  @include media-query($on-tablet){
+    @include rem-fallback(padding-left, $spacing-unit);
+    @include rem-fallback(padding-right, $spacing-unit);
+  }
+  
+  @include media-query($on-palm){
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .nav-item {
   display: block;
   list-style-type: none;
+  flex-grow: 1;
+  
+  @include media-query($on-tablet) {
+    text-align: center;
+  }
   
   @include media-query($on-palm){
     margin-left: 0;
@@ -84,10 +121,17 @@
   }
 }
 
+
 /************** Mobile Styles ******************************/
 
 
 @include media-query($on-palm) {
+  
+  .hamburger,
+  .close {
+    height: 100%;
+    @include rem-fallback(line-height, 100px);
+  }
 
   .close {
     display: none;
@@ -100,7 +144,7 @@
     position: fixed;
     @include rem-fallback(top, -25px);
     background-color: $background-color;
-    @include rem-fallback(left, -30px);
+    left: 0;
     overflow: hidden;
 
   }
@@ -114,7 +158,6 @@
 
     .close {
       display: block;
-      @include rem-fallback(margin-right, 15px);
     }
 
     .hamburger {
@@ -125,7 +168,7 @@
   .nav-list {
     display: none;
     @include rem-fallback(margin-top, 25px);
-    @include rem-fallback(padding-top, 85px);
+    @include rem-fallback(padding-top, 100px);
     border-top: 5px solid $grey-color-dark;
     text-align: center;
     box-sizing: border-box;
@@ -140,6 +183,7 @@
     a {
       display: block;
       padding: 25px 0;
+      @include rem-fallback(line-height, $double-spacing);
     }
 
 
@@ -155,7 +199,6 @@
 
 
   .nav {
-
     label {
       display: block;
       

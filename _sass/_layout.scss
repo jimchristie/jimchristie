@@ -6,8 +6,29 @@
   border-bottom: 1px solid $grey-color-light;
   @include rem-fallback(height, 100px);
   
+  @include media-query($on-tablet) {
+    @include rem-fallback(height, 200px);
+  }
+  
+  @include media-query($on-palm) {
+    @include rem-fallback(height, 100px);
+  }
+  .image-title {
+    @include media-query($on-tablet) {
+      text-align: center;
+    }
+    
+    @include media-query($on-palm) {
+      text-align: left;
+    }
+  }
+  
   .site-title {
     @include rem-fallback(line-height, 100px);
+    
+    @include media-query($small-phone){
+      @include rem-fallback(font-size, 25px);
+    }
   }
   .header-image {
     border-radius: 50%; 
@@ -16,6 +37,14 @@
     vertical-align: top; 
     @include rem-fallback(padding-top, $half-spacing);
     @include rem-fallback(padding-bottom, $half-spacing);
+    
+//     @include media-query($small-phone) {
+      
+//       @include rem-fallback(height, 50px); 
+//       @include rem-fallback(width, 50px); 
+//       @include rem-fallback(padding-top, 25px);
+//       @include rem-fallback(padding-bottom, 25px);
+//     }
   }
   
   .wrapper {
