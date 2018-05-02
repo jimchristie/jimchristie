@@ -6,8 +6,8 @@
     border-top: 1px solid $grey-color-light;
     
     &:first-child {
+      @include rem-fallback(padding-top, $spacing-unit);
       margin-top: 0;
-      padding-top: 0;
       border-top: none;
       
     }

@@ -6,7 +6,7 @@
     @include rem-fallback(font-size, 25px);
     
     &:first-of-type {
-      @include rem-fallback(margin-top, $spacing-unit);
+      margin-top: 0;
     }
   }
   
