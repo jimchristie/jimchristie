@@ -1,8 +1,5 @@
 <header class="site-header" role="banner">
   
-  
-  
-  
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign sorted_pages = site.pages | sort:"order" %}
@@ -18,7 +15,6 @@
         </a>
       </h1>
     </div>
-    
 
     {% if sorted_pages %}
     {% assign section = page.url | split, "/" %}
@@ -39,4 +35,5 @@
     </div>
     {% endif %}
   </div>
+  
 </header>
