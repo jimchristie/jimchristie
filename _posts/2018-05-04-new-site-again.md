@@ -11,7 +11,7 @@ snippet: >-
   On top of using Jekyll, I've implemented a number of other improvements and
   new features.
 category: Life
-featured: false
+featured: true
 enabled: true
 featuredImage:
   fill: contain
