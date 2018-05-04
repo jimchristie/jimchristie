@@ -12,7 +12,7 @@
   <div class="logo-snippet-container {{ current_or_old }}-job">
     {% if post.logo %}
       <div class="logo">
-        <img src="{{ post.logo }}" alt="{{ post.company }} logo">
+        <img src="{{ site.placeholderImage }}" data-image="{{ post.logo }}" alt="{{ post.company }} logo">
       </div>
     {% endif %}
     <div class="snippet-container">

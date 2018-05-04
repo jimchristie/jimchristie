@@ -10,7 +10,7 @@
   <div class="snippet-image-container">
     {% if post.featuredImage and post.featuredImage.image != '' %}
       <div class="featured-image{% if post.featuredImage.orientation %} {{ post.featuredImage.orientation}}{% endif %}">
-        <img src="{{ post.featuredImage.image }}"  />
+        <img src="{{ site.placeholderImage }}" data-image="{{ post.featuredImage.image }}" />
      </div>
     {% endif %}
     <div class="snippet-container">

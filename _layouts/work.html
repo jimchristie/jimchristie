@@ -43,7 +43,7 @@ layout: default
           {% if post.logo %}
             <div class="logo">
               <a href="{{ post.link }}" target="_blank">
-                <img src="{{ post.logo }}" alt="{{ post.title }} logo" />
+                <img src="{{ site.placeholderImage }}" data-image="{{ post.logo }}" alt="{{ post.title }} logo" />
               </a>
             </div>
           {% endif %}
@@ -137,7 +137,7 @@ layout: default
           {% if conference.logo %}
             <h3 class="logo">
               <a href="{{ conference.link }}" target="_blank">
-                <img src="{{ conference.logo }}" alt="{{ conference.title }} logo" />
+                <img src="{{ site.placeholderImage }}" data-image="{{ conference.logo }}" alt="{{ conference.title }} logo" />
               </a>
             </h3>
           {% else %}

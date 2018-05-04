@@ -1,23 +1,5 @@
-// I don't think I need this anymore. 5/4/2018
-// var getPosition = function(element){
-//   var left = element.scrollX;
-//   var right = element.innerWidth + left;
-//   var top = element.scrollY;
-//   var bottom = element.innerHeight + top;
-  
-//   var position =  {
-//     "left": left, 
-//     "right": right, 
-//     "top": top, 
-//     "bottom": bottom
-//   };
-  
-//   return position;
-// };
-
 function isVisible(element){
   var rect = element.getBoundingClientRect();
-  console.log(rect);
 
   var inViewport =  (
     ( // check if top is visible
@@ -38,9 +20,18 @@ function isVisible(element){
   return inViewport && !hidden;
 }
 
-var lazyLoadImage = function(element, image){
-  console.log('element: ' + element);
-  console.log('image', image);
+var lazyLoadImages = function(){
+  var elements = document.querySelectorAll('[data-image]');
+  var element;
+  
+  for (var i = 0; i < elements.length; i++){
+    element = elements[i];
+    if ( isVisible(element) ){
+      element = elements[i];
+      element.setAttribute('src', element.dataset.image);
+      element.removeAttribute('data-image');
+    }
+  }
   
 };
 
@@ -49,12 +40,10 @@ var lazyLoadBackgroundImages = function(){
   var element;
   var backgroundImage;
   var backgroundPosition;
-  var alreadyLoaded;
   
   for (var i=0; i < elements.length; i++){
     element = elements[i];
-    alreadyLoaded = element.dataset.lazyLoaded;
-    if (isVisible(element) && !alreadyLoaded){
+    if ( isVisible(element) ){
       backgroundImage = 'url(' + element.dataset.backgroundImage + ')';
       element.style.backgroundImage = backgroundImage;
 
@@ -63,19 +52,22 @@ var lazyLoadBackgroundImages = function(){
         element.style.backgroundPosition = backgroundPosition;
       }
       
-      element.dataset.lazyLoaded = true;
+      element.removeAttribute("data-background-image");
     }
   }
 };
 
 window.onload = function(){
   lazyLoadBackgroundImages();
+  lazyLoadImages();
 };
 
 window.onscroll = function(){
   lazyLoadBackgroundImages();
+  lazyLoadImages();
 };
 
 window.onresize = function(){
   lazyLoadBackgroundImages;
+  lazyLoadImages();
 };
