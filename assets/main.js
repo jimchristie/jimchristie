@@ -1,18 +1,19 @@
-var getPosition = function(element){
-  var left = element.scrollX;
-  var right = element.innerWidth + left;
-  var top = element.scrollY;
-  var bottom = element.innerHeight + top;
+// I don't think I need this anymore. 5/4/2018
+// var getPosition = function(element){
+//   var left = element.scrollX;
+//   var right = element.innerWidth + left;
+//   var top = element.scrollY;
+//   var bottom = element.innerHeight + top;
   
-  var position =  {
-    "left": left, 
-    "right": right, 
-    "top": top, 
-    "bottom": bottom
-  };
+//   var position =  {
+//     "left": left, 
+//     "right": right, 
+//     "top": top, 
+//     "bottom": bottom
+//   };
   
-  return position;
-};
+//   return position;
+// };
 
 function isVisible(element){
   var rect = element.getBoundingClientRect();
@@ -49,7 +50,6 @@ var lazyLoadBackgroundImages = function(){
   var elementPosition;
   var backgroundImage;
   var backgroundPosition;
-  var viewport = getPosition(window);
   var alreadyLoaded;
   
   for (var i=0; i < elements.length; i++){
