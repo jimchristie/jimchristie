@@ -47,7 +47,6 @@ var lazyLoadImage = function(element, image){
 var lazyLoadBackgroundImages = function(){
   var elements = document.querySelectorAll('[data-background-image]');
   var element;
-  var elementPosition;
   var backgroundImage;
   var backgroundPosition;
   var alreadyLoaded;
