@@ -18,7 +18,7 @@ featuredImage:
   focalPoint:
     leftRight: center
     topBottom: center
-  image: /img/uploads/jekyll.png
+  image: /img/uploads/jekyll-gray-background.jpg
   orientation: landscape
 date: '2018-05-04 01:09:00'
 ---
