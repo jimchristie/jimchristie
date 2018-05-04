@@ -94,7 +94,7 @@ layout: default
     {% for post in featured_art limit: 4 %}
     {% assign count = count | plus:1 %}
     <div class="art-preview art-preview-{{ count }}">
-      <div class="thumbnail" style="background-image: url({{ post.primaryImage.image }});{% if post.primaryImage.focalPoint %} background-position: {{ post.primaryImage.focalPoint.leftRight }} {{ post.primaryImage.focalPoint.topBottom }};{% endif %}">
+      <div class="thumbnail" data-background-image="{{post.primaryImage.image }}" data-background-position="{% if post.primaryImage.focalPoint %}{{ post.primaryImage.focalPoint.leftRight }} {{ post.primaryImage.focalPoint.topBottom }}"{% endif %}>
         <a href="{{ post.url | relative_url }}"></a>
       </div>
       <h4 class="title">
