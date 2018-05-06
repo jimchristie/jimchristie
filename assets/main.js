@@ -1,5 +1,10 @@
 function isVisible(element){
   var rect = element.getBoundingClientRect();
+  var hidden = (element.offsetParent === null);
+  
+  // no point figuring out position if it's hidden with css
+  if (hidden)
+    return false;
 
   var inViewport =  (
     ( // check if top is visible
@@ -15,44 +20,53 @@ function isVisible(element){
     )
   );
   
-  var hidden = (element.offsetParent === null);
-  
   return inViewport && !hidden;
 }
 
+var loadImage = function(element){
+  if (element.dataset && element.dataset.image){
+    element.setAttribute('src', element.dataset.image);
+    element.removeAttribute('data-image');
+  }
+};
+
 var lazyLoadImages = function(){
-  var elements = document.querySelectorAll('[data-image]');
-  var element;
+  var elements= document.querySelectorAll('[data-image]');
   
   for (var i = 0; i < elements.length; i++){
-    element = elements[i];
-    if ( isVisible(element) ){
-      element = elements[i];
-      element.setAttribute('src', element.dataset.image);
-      element.removeAttribute('data-image');
-    }
+    // this runs in an IIFE to make the timeout work
+    // ref: http://borgs.cybrilla.com/tils/javascript-for-loop-with-delay-in-each-iteration-using-iife/
+    (function(i){
+      setTimeout(function(){
+        if ( isVisible(elements[i]) ){
+          loadImage(elements[i]);
+        }
+      }, 1 * i);
+    })(i);
   }
-  
+};
+
+var loadBackgroundImage = function(element){
+  var backgroundImage = 'url(' + element.dataset.backgroundImage + ')';
+  element.style.backgroundImage = backgroundImage;
+};
+
+var setBackgroundPosition = function(element){
+  var backgroundPosition = element.dataset.backgroundPosition;
+  element.style.backgroundPosition = backgroundPosition;
 };
 
 var lazyLoadBackgroundImages = function(){
   var elements = document.querySelectorAll('[data-background-image]');
-  var element;
-  var backgroundImage;
-  var backgroundPosition;
   
-  for (var i=0; i < elements.length; i++){
-    element = elements[i];
-    if ( isVisible(element) ){
-      backgroundImage = 'url(' + element.dataset.backgroundImage + ')';
-      element.style.backgroundImage = backgroundImage;
+  for (var i = 0; i < elements.length; i++){
+    if ( isVisible(elements[i]) ){
+      loadBackgroundImage(elements[i]);
 
-      if (element.dataset.backgroundPosition) {
-        backgroundPosition = element.dataset.backgroundPosition;
-        element.style.backgroundPosition = backgroundPosition;
-      }
+      if (elements[i].dataset.backgroundPosition)
+        setBackgroundPosition(elements[i]);
       
-      element.removeAttribute("data-background-image");
+      elements[i].removeAttribute("data-background-image");
     }
   }
 };

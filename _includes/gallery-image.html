@@ -1,12 +1,12 @@
 
       <div class="gallery-image{% if post.primaryImage.image.orientation != '' %} {{ post.primaryImage.orientation }}{% endif %}">
-        <input type="checkbox" id="gallery-trigger-{{ count }}" class="gallery-trigger">
+        <input type="checkbox" id="gallery-trigger-{{ count }}" class="gallery-trigger" onchange="lazyLoadImages()">
         <label for="gallery-trigger-{{ count }}" class="gallery-preview">
-          <span class="gallery-image"><img src="{{ post.primaryImage.image }}"></span>
+          <span class="gallery-image"><img src="{{ site.placeholderImage }}" data-image="{{ post.primaryImage.image }}"></span>
           <span class="far fa-times-circle close"></span>
         </label>
         <div class="lightbox">
-          <img class="lightbox-image" alt="{{ post.title }}" src="{{ post.primaryImage.image }}"/>
+          <img class="lightbox-image" alt="{{ post.title }}" src="{{ site.placeholderImage }}" data-image="{{ post.primaryImage.image }}"/>
           <h1 class="gallery-title">
             {{ post.title }}
           </h1>
