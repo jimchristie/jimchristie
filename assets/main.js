@@ -1,13 +1,11 @@
-function isVisible(element){
-  var rect = element.getBoundingClientRect();
-  var hidden = (element.offsetParent === null);
-  
-  // no point figuring out position if it's hidden with css
-  if (hidden)
-    return false;
+function hiddenByCss(element) {
+  return element.offsetParent === null;
+}
 
-  var inViewport =  (
-    ( // check if top is visible
+function inViewport(element) {
+  var rect = element.getBoundingClientRect();
+  
+  return (
       rect.top >= 0 &&
       rect.left >= 0 &&
       rect.top <= (window.innerHeight || document.documentElement.clientHeight) && 
@@ -17,10 +15,11 @@ function isVisible(element){
       rect.right >= 0 &&
       rect.bottom <= (window.inerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    )
-  );
-  
-  return inViewport && !hidden;
+    );
+}
+
+function isVisible(element){
+  return inViewport(element) && !hiddenByCss(element);
 }
 
 var loadImage = function(element){
