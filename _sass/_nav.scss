@@ -129,7 +129,6 @@
   
   .hamburger,
   .close {
-    height: 100%;
     @include rem-fallback(line-height, 100px);
   }
 
