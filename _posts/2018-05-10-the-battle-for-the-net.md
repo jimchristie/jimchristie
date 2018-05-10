@@ -17,7 +17,7 @@ featuredImage:
   orientation: landscape
 date: '2018-05-10 02:57:47'
 ---
-Unless you've been living in a hole, you've probably heard that net neutrality is under attack from the FCC. Over the next weekish, a number of websites will be engaged in a campaign to lobby the Senate to vote to block the FCC's repeal of net neutrality. As a supporter of an open internet, I have decided to participate in this campaign.
+You've probably heard that net neutrality is under attack from the FCC. Over the next weekish, a number of websites will be engaged in a campaign to lobby the Senate to vote to block the FCC's repeal of net neutrality. As a supporter of an open internet, I have decided to participate in this campaign.
 
 Many of the arguments around net neutrality focus on business objectives. 
 
@@ -34,4 +34,12 @@ As more and more corporations merge to form conglomerates, it's more and more li
 1. CNN is owned by Turner Broadcasting, which is owned by Time Warner
 2. Internet Providers such as ISP now have the right to block competitor content simply because it is competitor content
 
-This means that AT&T could block all of the major news networks, forcing their customers to get their news primarily from CNN.  What's worse, because ISPs are public utilities, and public utilities are considered to be [natural monopolies](https://en.wikipedia.org/wiki/Natural_monopoly), they are allowed by government regulations to control geographic regions.
+This means that AT&T could block all of the major news networks, forcing their customers to get their news primarily from CNN.  
+
+I'm only picking on AT&T and CNN because their merger is currently in the news. I don't have a problem with either of those organizations. It doesn't even take a merger to create this problem. An ISP could create a fast lane and a slow lane, default everyone to the slow lane, and sign a fast lane contracts that are exclusive within their niche, i.e., one news organization gets into the fast lane, one streaming TV service, etc.
+
+What's worse, because ISPs are public utilities, and public utilities are considered to be [natural monopolies](https://en.wikipedia.org/wiki/Natural_monopoly), they are allowed by government regulations to control geographic regions. Many consumers don't have the option to simply take their business elsewhere if they don't like their provider blocking news sources.  They're stuck with whatever their ISP chooses, whether it's good for them or not.
+
+As a citizen of the free world, this is of great concern to me and, I hope, to you as well. This is why, despite the very low volume of traffic on this site, I've decided to join in this fight. I want to do every little bit to help that I can. 
+
+I realize that the banner is annoying and you may have closed it already. If you have, please go to [www.battleforthenet.com/](https://www.battleforthenet.com/) and tell your Congressional Representative that you support net neutrality and that you'd like them to do the same.
