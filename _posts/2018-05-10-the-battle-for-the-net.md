@@ -9,8 +9,8 @@ snippet: >-
   objectives. But I think that there's a more important argument: Revoking net
   neutrality threatens our First Amendment right to freedom of expression.
 category: Life
-featured: false
-enabled: false
+featured: true
+enabled: true
 featuredImage:
   fill: contain
   image: /img/uploads/battle-for-the-net.png
