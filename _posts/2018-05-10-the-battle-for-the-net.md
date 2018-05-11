@@ -3,11 +3,11 @@ layout: post
 title: The Battle for the Net
 snippet: >-
   Over the next weekish, a number of websites will be engaged in a campaign to
-  lobby the Senate to vote to block the FCC's repeal of net neutrality. As a
-  supporter of an open internet, I have decided to participate in this
-  campaign.Many of the arguments around net neutrality focus on business
-  objectives. But I think that there's a more important argument: Revoking net
-  neutrality threatens our First Amendment right to freedom of expression.
+  lobby the Senate to block the FCC's repeal of net neutrality. As a supporter
+  of an open internet, I have decided to participate in this campaign.Many of
+  the arguments around net neutrality focus on business objectives. But I think
+  that there's a more important argument: Revoking net neutrality threatens our
+  First Amendment right to freedom of expression.
 category: Life
 featured: true
 enabled: true
