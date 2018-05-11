@@ -17,7 +17,7 @@ featuredImage:
   orientation: landscape
 date: '2018-05-10 02:57:47'
 ---
-You've probably heard that net neutrality is under attack from the FCC. Over the next weekish, a number of websites will be engaged in a campaign to lobby the Senate to vote to block the FCC's repeal of net neutrality. As a supporter of an open internet, I have decided to participate in this campaign.
+You've probably heard that net neutrality is under attack from the FCC. Over the next weekish, a number of websites will be engaged in a campaign to lobby the Senate to block the FCC's repeal of net neutrality. As a supporter of an open internet, I have decided to participate in this campaign.
 
 Many of the arguments around net neutrality focus on business objectives. 
 
