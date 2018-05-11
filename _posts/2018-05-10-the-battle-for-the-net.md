@@ -14,7 +14,7 @@ featured: true
 enabled: true
 featuredImage:
   fill: contain
-  image: /img/uploads/battle-for-the-net.png
+  image: /img/uploads/battle-for-the-net-wide.png
   orientation: landscape
 date: '2018-05-10 02:57:47'
 ---
