@@ -22,6 +22,23 @@ function isVisible(element){
   return inViewport(element) && !hiddenByCss(element);
 }
 
+function linkIsExternal(element) {
+  return (element.host !== window.location.host);
+}
+
+function getExternalLinks(){
+  var anchors = document.getElementsByTagName('a');
+  var externalLinks = [];
+  
+  for (var i = 0; i < anchors.length; i++) {
+    if ( linkIsExternal(anchors[i]) ) {
+        externalLinks.push(anchors[i]);
+    }
+  }
+  
+  return externalLinks;
+}
+
 var loadImage = function(element){
   if (element.dataset && element.dataset.image){
     element.setAttribute('src', element.dataset.image);
@@ -70,9 +87,22 @@ var lazyLoadBackgroundImages = function(){
   }
 };
 
+var addTargetBlankToExternalLinks = function() {
+  var externalLinks = getExternalLinks();
+  
+  if (externalLinks.length < 1)
+    return;
+  
+  for (var i = 0; i < externalLinks.length; i++ ) {
+    externalLinks[i].setAttribute("target", "_blank");
+  }
+  
+};
+
 window.onload = function(){
   lazyLoadBackgroundImages();
   lazyLoadImages();
+  addTargetBlankToExternalLinks();
 };
 
 window.onscroll = function(){
