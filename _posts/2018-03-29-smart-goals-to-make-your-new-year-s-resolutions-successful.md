@@ -16,6 +16,7 @@ featuredImage:
     topBottom: '-25px'
   image: /img/uploads/SMART-Goals.png
   orientation: portrait
+  altText: SMART Goals
 date: '2018-01-08 01:56:16'
 ---
 My local Rec Center has an indoor track that runs around the edge of the building just inside their giant two story windows. Driving by, you can see people walking and running on the track. Every morning, I pass by on my way to work and see one or two people engaged in their morning routine. Today, I saw at least half a dozen. It instantly hit me: It's New Year's resolution time. 

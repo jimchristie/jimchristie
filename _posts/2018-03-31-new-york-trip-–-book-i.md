@@ -15,6 +15,7 @@ featuredImage:
     topBottom: ''
   image: /img/uploads/Welcome-to-New-York.jpg
   orientation: landscape
+  altText: Welcome to New York
 date: '2014-08-26 08:32:42'
 ---
 [Brooke](http://brookefletcher.com/) and I went to New York a few weeks back. Her employer sent her to [Nielsen Norman’s Usability Week](http://www.nngroup.com/training/). They put us up in a [hotel](http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-times-square-NYCMWGI/index.html) in Times Square, right around the corner from the conference. The hotel was fairly nice. It was expensive because of the location, but who cares? We weren’t paying for it. We got to spend a few extra days after the conference and moved to a [different hotel](http://clubquarters.com/new-york/wall-street) downtown, mostly because it was a little cheaper. It kind of sucked a little. It was clean, but the room was oddly shaped, that bathroom was tiny, and the air conditioner was right over the bed and ran with the force of a jet turbine. When it turned on at night, it was freezing for the five minutes that it took to cool the room down. But it was clean and secure, which I suppose are the main concerns. It was a stroke of luck that the two locations offered us easy access to the main touristy parts of Manhattan.

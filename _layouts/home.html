@@ -11,8 +11,11 @@ layout: default
   {% endif %}
 
   <div class="post-content">
-    <img src="/img/uploads/logo.jpg" style="border-radius: 50%"/>
+    <img src="/img/uploads/logo.jpg" alt="logo" style="border-radius: 50%"/>
     <div class="text">
+      <h3 class="display-none">
+        About Me
+      </h3>
       {{ site.description }}
     </div>
   </div>
@@ -21,7 +24,7 @@ layout: default
 {% assign featured_art = site.art | where:"featured", true | sort: date | reverse %}
 
 
-<!--------------------- featured posts --------------------------------->
+<!-- featured posts -->
 
 {% if featured_posts.size > 0 %}
 <section class="home post">
@@ -45,9 +48,7 @@ layout: default
 
 
 
-<!-- 
---------------------- Work section ----------------------------- 
--->
+<!-- Work section -->
 
 {% assign work_date_format = site.minima.date_format | default: "%B, %Y" %}
 {% assign year_format = site.minima.date_format | default: "%Y" %}
@@ -81,9 +82,7 @@ layout: default
 {% endif %}
 
 
-<!-- 
-------------------- Art section --------------------------------
--->
+<!-- Art section -->
 
 {% if featured_art.size > 0 %}
 {% assign count = 0 %}

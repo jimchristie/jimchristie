@@ -16,6 +16,7 @@ featuredImage:
     topBottom: '0'
   image: /img/uploads/yogis.jpg
   orientation: landscape
+  altText: Yogis
 date: '2017-10-08 10:50:55'
 ---
 I went to the Agile Midwest conference last week and I heard a lot of people talking about their agile experience in the context of what they were doing. People said things like "I've been doing agile for 3 years." Many people said "using agile" instead of "doing agile," but in most cases, it amounts to the same thing. I found these descriptions of agile experience very interesting, especially given the context of a conference full of people who are invested in agility. 

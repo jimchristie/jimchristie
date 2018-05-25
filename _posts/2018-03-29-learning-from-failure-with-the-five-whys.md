@@ -13,6 +13,7 @@ featuredImage:
   fill: cover
   image: /img/uploads/house-painter-why.jpg
   orientation: landscape
+  altText: Five Whys
 date: '2018-01-16 02:19:34'
 ---
 As we've [previously mentioned](/blog/smart-goals-to-make-your-new-year-s-resolutions-successful/), 92% of all New Year's resolutions fail by the end of February. If we assume that the failure rate is linear, nearly 1/4 have already failed. Wow. 

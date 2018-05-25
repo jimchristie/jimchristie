@@ -11,6 +11,7 @@ featuredImage:
   fill: contain
   image: /img/uploads/Fibonacci_spiral_34.png
   orientation: landscape
+  altText: Fibonacci spiral
 date: '2016-12-06 12:00:00'
 ---
 Of course, the standard answer to the above question is, "It depends." And that's true. A story point is an arbitrary unit of measure that represents the amount of complexity, effort, and uncertainty in a bit of work. What a single point means can vary from team to team. However, once a team settles on what one point represents, that remains fixed. So far, so good.

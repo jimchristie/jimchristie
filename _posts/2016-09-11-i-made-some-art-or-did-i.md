@@ -13,6 +13,7 @@ enabled: true
 featuredImage:
   image: /img/uploads/Dental-Terror.png
   orientation: landscape
+  altText: Dental Terror
 date: '2016-09-11 12:49:19'
 ---
 The question "What is art?" has always been of interest to me. The subjective nature of art often leaves us questioning whether or not something truly is art. Is it truly art if someone is just slinging paint against a canvas? What if it could have been done by a five-year-old? What if it was done by a five-year-old? Nowadays, with computers, a new kind of question is arising: How much human intervention is required to make art?

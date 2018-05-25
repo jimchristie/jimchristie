@@ -17,6 +17,7 @@ featuredImage:
     topBottom: '0'
   image: /img/uploads/CA-Training-Agenda.jpg
   orientation: portrait
+  altText: Training Agenda
 date: '2018-03-05 02:36:14'
 ---
 Over the past several months, I've been building up my training skillset with several of my coworkers at [Shelter Insurance](/work/agile-coach-trainer-and-scrum-master/). This past week one of those coworkers and I put on Shelter's first in-house two-day Agile training session. It was super fun!

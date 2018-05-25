@@ -20,6 +20,7 @@ featuredImage:
     topBottom: center
   image: /img/uploads/jekyll-gray-background.jpg
   orientation: landscape
+  altText: Jekyll logo
 date: '2018-05-04 01:09:00'
 ---
 I've [once again](/blog/new-site/), rebuilt my website. I'm really excited about this rebuild. This time around, I'm using [Jekyll](https://jekyllrb.com/docs/home/), a static site generator.  This gives me a few advantages over my old Craft site.
