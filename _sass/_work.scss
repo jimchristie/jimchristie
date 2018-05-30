@@ -96,7 +96,7 @@
     
     li {
       width: 50%;
-      margin: auto;
+      margin: 0 auto;
       
       @include media-query ($on-laptop) {
         @include rem-fallback(margin-bottom, $spacing-unit);
