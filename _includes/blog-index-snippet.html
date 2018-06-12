@@ -1,13 +1,13 @@
 <li class="post">
   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
   
-  
   <h3 class="post-title">
     <a class="post-link" href="{{ post.url | relative_url }}">
       {{ post.title | escape }}
     </a>
   </h3>
-  <div class="snippet-image-container">
+  
+  <div class="snippet-image-container{% if post.featuredImage.orientation %} {{ post.featuredImage.orientation }}{% endif %}">
     {% if post.featuredImage and post.featuredImage.image != '' %}
       <div class="featured-image{% if post.featuredImage.orientation %} {{ post.featuredImage.orientation}}{% endif %}">
         <img src="{{ site.placeholderImage }}" data-image="{{ post.featuredImage.image }}" alt="{% if post.featuredImage.altText %}{{ post.featuredImage.altText }}{% else %}Featured image{% endif %}" />

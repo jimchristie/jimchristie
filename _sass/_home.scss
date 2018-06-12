@@ -53,14 +53,6 @@
         padding: 0;
       }
     }
-    
-    .snippet-container {
-      @include rem-fallback(margin-left, $spacing-unit);
-      
-      @include media-query($on-palm) {
-        margin-left: 0;
-      }
-    }
   }
 }
 

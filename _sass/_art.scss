@@ -29,21 +29,32 @@
 .gallery-image {
   display: block;
   @include rem-fallback(margin-bottom, $spacing-unit);
+  @include rem-fallback(padding-left, $half-spacing);
+  @include rem-fallback(padding-right, $half-spacing);
+  
+  label {
+    text-align: center;
+  }
 }
 
-.portrait {
-  max-width: 25%;
+.art {
+  .portrait {
+    max-width: 250px;
+  }
+
+  .landscape {
+    max-width: 350px;
+  }
 }
 
-.landscape {
-  max-width: 35%;
-}
 
 @include media-query($on-palm){
-  .portrait,
-  .landscape {
-    max-width: 100%;
-    max-height: 800vh;
+  .art {
+    .portrait,
+    .landscape {
+      max-width: 100%;
+      max-height: 800vh;
+    }
   }
 }
 
