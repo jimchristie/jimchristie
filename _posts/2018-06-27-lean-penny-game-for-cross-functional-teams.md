@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lean Penny Game for Cross Functional Teams
+title: A Lean Penny Game for Cross Functional Teams
 snippet: >-
   In his seminal work on the Theory of Constraints, The Goal, Eli Goldratt
   outlines a matchstick game to illustrate how variability in flow impacts a
@@ -43,4 +43,4 @@ After that, we reset the board and ran a modified version of the game for anothe
 * Any player working outside of his or her workstation would receive a one point penalty to his or her capacity. E.g., if the die showed a four on a given "day," the player could only move three pennies. If a player rolled a one, he or she wouldn't be able to move any pennies.
 * Before rolling each day, the players could have a stand-up to determine who would work on which station.
 
-This time, the group was able to keep the WIP and corresponding delivery times down.    We also noted that we minimally affected the overall number of items delivered. There was a small dip and that's all. We all agreed that this could even be an anomaly. There was a brief discussion about whether or not it would be worth it to deliver fewer items if we were delivering the items faster, though not much consensus. [Perhaps](https://media1.tenor.com/images/a27f757d68aebe40a0c432516fb8a53a/tenor.gif?itemid=4611190) one day I'll build my own automated version that mimics cross functional teams.
+This time, the group was able to keep the WIP and corresponding delivery times down.    We also noted that we minimally affected the overall number of items delivered. There was a small dip and that's all. We all agreed that this could even be an anomaly. There was a brief discussion about whether or not it would be worth it to deliver fewer items if we were delivering the items faster, though not much consensus. [Perhaps](/img/uploads/workaholics-nah.gif) one day I'll build my own automated version that mimics cross functional teams.
