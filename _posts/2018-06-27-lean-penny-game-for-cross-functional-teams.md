@@ -24,7 +24,7 @@ The game is simple. Each scout has a bowl representing a workstation. Their jobs
 
 I wanted to adapt this game to illustrate how a team could improve their flow by introducing cross functional team members. I Googled around to see if something like that exists, but I didn't find exactly what I was looking for. However, [an Atomic Object blog post that showcased something close](https://spin.atomicobject.com/2016/01/19/penny-game-software-dev/) and even pointed to an [online version of the game](http://exupero.org/pennygame/#44740167). 
 
-![Automated lean penny game](/img/uploads/automated-lean-penny-game.png)
+![automated lean penny game](/img/uploads/automated-lean-penny-game.png)
 
 It came from a book called [_Velocity_](https://www.amazon.com/Velocity-Combining-Constraints-Breakthrough-Performance-ebook/dp/B00304XCQM/ref=sr_1_1?s=books&ie=UTF8&qid=1530147649&sr=1-1&keywords=velocity) (which I haven't read yet) and was meant to illustrate how constraining each work station, i.e., introducing WIP limits, can improve flow. 
 
