@@ -28,10 +28,12 @@ I wanted to adapt this game to illustrate how a team could improve their flow by
 
 The team I was working with at the time was having a hard time letting go of resource efficiency, so rather than introduce WIP limits I wanted to illustrate how important it is for people to work outside their comfort zones. We played the first round just like the Atomic Object version.
 
+* 4-6 players per team. 
 * Each player starts with four pennies.
 * Every "day," each player rolls a die to determine his or her capacity.
-* The player moves the number on the die or the number of pennies that he or she had at the beginning of the "day."
+* The player moves pennies based on the number on the die or the number of pennies that he or she had at the beginning of the "day."
 * We did 10 "days" "of work."
+* The last person on line keeps track of how many pennies are released each day.
 
 At the end of 10 "days," we noted that the overall WIP in the system had grown. We also noted that the average number of pennies that were completed each "day" was about 2.5, significantly less than the mathematical average roll of 3.5.
 
