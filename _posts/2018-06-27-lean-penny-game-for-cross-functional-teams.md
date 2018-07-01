@@ -10,7 +10,14 @@ snippet: >-
 category: Work
 featured: false
 enabled: true
-date: '2018-06-27 07:32:11'
+featuredImage:
+  fill: cover
+  focalPoint:
+    leftRight: center
+    topBottom: bottom
+  image: /img/uploads/pennies-and-dice.jpg
+  orientation: landscape
+date: '2018-07-01 07:32:00'
 ---
 ### The Original Inspiration
 
