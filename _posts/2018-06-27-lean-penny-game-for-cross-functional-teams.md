@@ -8,7 +8,7 @@ snippet: >-
   show how cross functional teams can reduce that variability and deliver more
   consistently.
 category: Work
-featured: false
+featured: true
 enabled: true
 featuredImage:
   fill: cover
