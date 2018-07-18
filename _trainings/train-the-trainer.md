@@ -13,8 +13,8 @@ provider:
   name: Agile 42
 trainers:
   - trainer:
-      link: 'https://www.linkedin.com/in/daniel-m-lynn/'
-      name: Daniel Lynn
+      link: 'https://www.linkedin.com/in/lklosebc/'
+      name: Lukas Klose
   - trainer:
       link: 'https://www.linkedin.com/in/dhavalpanchal/'
       name: Dhaval Panchal
