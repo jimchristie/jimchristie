@@ -65,6 +65,7 @@
       }
     }
   }
+  
   &.post,
   &.art,
   &.work {
@@ -74,6 +75,20 @@
     .section-title {
       @include media-query($on-palm) {
         text-align: center;
+      }
+    }
+    
+    .certification-header {
+      text-align: left;
+    }
+    
+    .certifications {
+      .certification-title {
+        @include rem-fallback(margin-top, $quarter-spacing);
+      }
+      
+      .logo {
+        @include rem-fallback(height, 100px);
       }
     }
   }
