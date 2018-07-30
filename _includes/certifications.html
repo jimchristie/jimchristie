@@ -1,10 +1,19 @@
+{% if page.layout == 'home' %}
+  {% assign sectionTitleTag = 'h3' %}
+  {% assign certTitleTag = 'h4' %}
+{% else %}
+  {% assign sectionTitleTag = 'h2' %}
+  {% assign certTitleTag = 'h3' %}
+{% endif %}
+
+
 {% if site.certifications.size > 0 %}
   {% assign date_format = site.minima.date_format | default: "%B %d, %Y" %}
   {% assign sorted_certs = site.certifications | sort:'certificationDate' | reverse %}
-  <section class="collection-index">
-    <h2 class="certification-header" id="certifications">
+  <section class="collection-index{% if page.layout == 'home' %} home work{% endif %}">
+    <{{ sectionTitleTag }} class="certification-header section-title" id="certifications">
       Certifications
-    </h2>
+    </{{ sectionTitleTag }}>
     <ul class="post-list certifications">
       {% for post in sorted_certs %}
         <li>
@@ -16,11 +25,11 @@
             </div>
           {% endif %}
           <div class="title-meta">
-            <h3 class="certification-title text-align-center">
+            <{{ certTitleTag }} class="certification-title text-align-center">
               {% if post.link %}<a href="{{ post.link}}" target="_blank">{% endif %}
               {{ post.title }}
               {% if post.link %}</a>{% endif %}
-            </h3>
+            </{{ certTitleTag }}>
             {% if post.certificationDate or post.expirationDate %}
               <p class="post-meta">
                 {% if post.certificationDate %}
