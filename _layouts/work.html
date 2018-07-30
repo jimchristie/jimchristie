@@ -30,44 +30,7 @@ layout: default
   {% endif %}
 </section>
 
-{% if site.certifications.size > 0 %}
-  {% assign date_format = site.minima.date_format | default: "%B %d, %Y" %}
-  {% assign sorted_certs = site.certifications | sort:'certificationDate' | reverse %}
-  <section class="collection-index">
-    <h2 class="certification-header" id="certifications">
-      Certifications
-    </h2>
-    <ul class="post-list certifications">
-      {% for post in sorted_certs %}
-        <li>
-          {% if post.logo %}
-            <div class="logo">
-              <a href="{{ post.link }}" target="_blank">
-                <img src="{{ site.placeholderImage }}" data-image="{{ post.logo }}" alt="{{ post.title }} logo" />
-              </a>
-            </div>
-          {% endif %}
-          <div class="title-meta">
-            <h3 class="certification-title text-align-center">
-              {% if post.link %}<a href="{{ post.link}}" target="_blank">{% endif %}
-              {{ post.title }}
-              {% if post.link %}</a>{% endif %}
-            </h3>
-            {% if post.certificationDate or post.expirationDate %}
-              <p class="post-meta">
-                {% if post.certificationDate %}
-                  <span class="certification-date">
-                    {{ post.certificationDate | date:date_format }}
-                  </span>
-                {% endif %}                          
-              </p>
-            {% endif %}
-          </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-{% endif %}
+{% include certifications.html %}
 
 {% if site.trainings.size > 0 %}
   {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
