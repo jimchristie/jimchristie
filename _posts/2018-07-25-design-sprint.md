@@ -9,7 +9,7 @@ snippet: >-
   participate in as a facilitator.
 category: Work
 featured: true
-enabled: true
+enabled: false
 featuredImage:
   fill: contain
   image: /img/uploads/product-design-sprint-feature-image6.png
