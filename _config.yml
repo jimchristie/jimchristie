@@ -13,11 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jim Christie
+title: Brooke Fletcher
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm Jim Christie. I'm a web devoloper, an agile coach, a cyclist, and sometimes, an artist. As anyone who works on the internet should, I love cats. 
-  I have over five years of web development experience. I lean strongly toward back end functionality of websites. I can do design, but I don't love it and, consequently, I'm not the best at it. 
-  I've become a strong supporter of agile methodologies.
+  I'm Brooke Fletcher. I love cats, my boyfriend, and job hunting. I'm also an amazing girlfriend.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jimirings
@@ -30,8 +28,8 @@ permalink: /blog/:title/
 placeholderImage: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
 
 # Analytics
-googleAnalyticsID: 'UA-62000039-1'
-smartLookID: 'a9272f39ea76e6593a0ee8b1a621aef53ebbf1fc'
+# googleAnalyticsID: 'UA-62000039-1'
+# smartLookID: 'a9272f39ea76e6593a0ee8b1a621aef53ebbf1fc'
 
 # Build settings
 markdown: kramdown
