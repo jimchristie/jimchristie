@@ -4,9 +4,9 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign sorted_pages = site.pages | sort:"order" %}
     <div class="image-title">
-      {% if page.title %}
+      {% if page.title and site.logo %}
         <a class="site-title" rel="author" href="{{ "/" | relative_url }}" style="text-decoration: none;">
-          <img class="header-image" src="/img/uploads/logo.jpg" alt="logo"/> 
+          <img class="header-image" src="{{ site.logo }}" alt="logo"/> 
         </a>
       {% endif %}
       <h1 class="site-title">

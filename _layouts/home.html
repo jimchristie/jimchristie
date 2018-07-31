@@ -11,7 +11,9 @@ layout: default
   {% endif %}
 
   <div class="post-content">
-    <img src="/img/uploads/logo.jpg" alt="logo" style="border-radius: 50%"/>
+    {% if site.logo %}
+      <img src="{{ site.logo }}" alt="logo" style="border-radius: 50%"/>
+    {% endif %}
     <div class="text">
       <h3 class="display-none">
         About Me
