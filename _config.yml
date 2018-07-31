@@ -29,6 +29,10 @@ stackexchange:
 permalink: /blog/:title/
 placeholderImage: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
 
+# Analytics
+googleAnalyticsID: 'UA-62000039-1'
+smartLookID: 'a9272f39ea76e6593a0ee8b1a621aef53ebbf1fc'
+
 # Build settings
 markdown: kramdown
 #theme: minima
