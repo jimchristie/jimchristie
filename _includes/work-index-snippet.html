@@ -38,7 +38,10 @@
       </p>
       {% if post.snippet %}
         <div class="snippet">
-          {{ post.snippet }}
+          {{ post.snippet | markdownify }}
+          <p>
+            <a href="{{ post.url | relative_url }}">Read more</a>
+          </p>
         </div>
       {% endif %}
     </div>
