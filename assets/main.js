@@ -190,7 +190,7 @@ function getExternalLinks(){
   return externalLinks;
 }
 
-var addTargetBlankToExternalLinks = function() {
+var makeExternalLinksOpenNewTab = function() {
   var externalLinks = getExternalLinks();
   
   if (externalLinks.length < 1)
@@ -198,6 +198,7 @@ var addTargetBlankToExternalLinks = function() {
   
   for (var i = 0; i < externalLinks.length; i++ ) {
     externalLinks[i].setAttribute("target", "_blank");
+    externalLinks[i].setAttribute("rel", "noopener");
   }
 };
 
@@ -209,7 +210,7 @@ var addTargetBlankToExternalLinks = function() {
 window.onload = function(){
   lazyLoadBackgroundImages();
   lazyLoadImages();
-  addTargetBlankToExternalLinks();
+  makeExternalLinksOpenNewTab();
 };
 
 window.onscroll = function(){
