@@ -9,12 +9,12 @@ snippet: >-
   participate in as a facilitator.
 category: Work
 featured: true
-enabled: false
+enabled: true
 featuredImage:
   fill: contain
-  image: /img/uploads/product-design-sprint-feature-image6.png
+  image: /img/uploads/design-sprint.png
   orientation: landscape
-date: '2018-07-25 01:48:59'
+date: '2018-08-13 09:38:00'
 ---
 Our team engaged in a [Design Sprint](http://www.gv.com/sprint/) recently.  It's the third one that our team has done and the second one that I've been involved in. I have to say, Design Sprints are one of the more fun things that I get to participate in as a facilitator. 
 
@@ -46,12 +46,14 @@ Each day of the sprint incorporates a group of activities around a specific goal
 
 ### My Take
 
+There's no question in my mind as to whether or not the Design Sprint is a valuable use of time. It is. It gives you a working prototype, complete with user feedback in only a week. That's about as lean as you can get in the design world. 
+
 As a facilitator, coach, and trainer, I have a unique appreciation for the activities and the process involved. The Design Sprint embodies the agile value of "[individuals and interactions over processes and tools](http://agilemanifesto.org/)." There is certainly a defined process to the sprint. But that sprint is a process that is based on, facilitates, and supports the interactions between individuals. There are very few tools that are specifically recommended, and most of the ones that are recommended are easily substituted by something if you find something that you think would work better.
 
 If you're wanting to try running a Design Sprint of your own, I have a couple suggestions that I think will help:
 
 * Get the physical copy of the book. I initially bought the Kindle version thinking that it would be great to reference it wherever I happened to be. But I found myself wanting to flip back and forth in a way that a digital book doesn't support very well.
 * Get a facilitator who doesn't participate in the activities. The Design Sprint touches on a wide variety of subjects. It's very difficult to get off on tangents, lost down rabbit holes, stuck on a difficult decision, or any combination of those. Having someone whose sole job is to monitor the process and keep the group on track is invaluable.  
-* Stick to the long-term-goal that you established on Monday. If you're the facilitator, reference it all the time. 
+* Stick to the long-term-goal that you established on Monday. If you're the facilitator, reference it all the time. Since you're solving a big problem, it's really easy to let other goals slip in, or veer off course completely. 
 
-I definitely recommend that you run a Design Sprint if you find yourself with a big
+If you have a big design problem that you need to solve, I definitely recommend giving a Design Sprint a shot. It's a fun and engaging way to solve the problem and, even though it's a big commitment, it saves a lot of time in the long run since you don't have to actually do the development work to validate your prototypes.
