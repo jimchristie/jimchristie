@@ -9,10 +9,10 @@ snippet: >-
   participate in as a facilitator.
 category: Work
 featured: true
-enabled: false
+enabled: true
 featuredImage:
   fill: contain
-  image: /img/uploads/product-design-sprint-feature-image6.png
+  image: /img/uploads/design-sprint.png
   orientation: landscape
 date: '2018-07-25 01:48:59'
 ---
