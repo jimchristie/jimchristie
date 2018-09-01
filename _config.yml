@@ -79,6 +79,12 @@ collections:
   
   conferences:
     output: false
+    
+  book-reviews:
+    output: true
+    permalink: /book-reviews/:title
+    values:
+      layout: book-review-single
 
 defaults:
   - scope:
@@ -91,3 +97,8 @@ defaults:
       type: work
     values:
       layout: "work-single"
+  - scope:
+      path: ""
+      type: book-review
+    values:
+      layout: "book-review-single"
