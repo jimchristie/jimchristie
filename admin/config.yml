@@ -190,6 +190,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Web Link", name: "link", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Logo", name: "logo", widget: "image", required: false}
+      - label: "Years" 
+        name: "years" 
+        widget: "list"
+        required: true
+        fields:
+          - {label: "Year", name: "year", widget: "number", valueType: "int"}
+        
     
   - name: "trainings"
     label: "Training"
