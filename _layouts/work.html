@@ -4,6 +4,8 @@ layout: default
 
 
 {% assign year_format = site.minima.date_format | default: "%Y" %}
+{% assign month_format = site.minima.date_format | default: "%B" %}
+{% assign day_format = site.minima.date_format | default: "%e" %}
 
 <section class="work collection-index">
   {% if site.work.size > 0 %}
@@ -55,10 +57,23 @@ layout: default
             Provided by <a href="{{ training.provider.link }}" target="_blank">
               {{ training.provider.name }}
             </a><br>
+            {% assign startDay = training.startDate | date: day_format %}
+            {% assign endDay = training.endDate | date: day_format %}
+            
+            {% assign startMonth = training.startDate | date: month_format %}
+            {% assign endMonth = training.endDate | date: month_format %}
+            
+            {% assign startYear = training.startDate | date: year_format %}
+            {% assign endYear = training.endDate | date: year_format %}
+            
             {% if training.startDate == training.endDate %}
               {{ training.startDate | date: date_format }}
+            {% elsif startYear == endYear and startMonth == endMonth %}
+              {{ startMonth }} {{ startDay }}-{{ endDay }}, {{ startYear }}
+            {% elsif startYear == endYear %}
+              {{ startMonth }} {{ startDay }} - {{ endMonth }} {{ endDay }}, {{ endYear }}
             {% else %}
-              {{ training.startDate | date: date_format }} - {{training.endDate | date: date_format }}
+              {{ training.startDate | date: date_format }} - {{ training.endDate | date: date_format }}
             {% endif %}
           </p>
           <div class="training-description">
