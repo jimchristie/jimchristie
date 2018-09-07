@@ -7,5 +7,7 @@ logo: /img/uploads/agile-gravy-logo.jpg
 description: >-
   Agile Gravy was the precursor to [Agile Midwest](http://www.agilemidwest.org). Agile Gravy offered a one-day conference
   for agilists in St. Louis and the broader Midwest region. 
+years:
+  - year: 2016
 ---
 
