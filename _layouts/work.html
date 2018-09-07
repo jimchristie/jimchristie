@@ -94,8 +94,10 @@ layout: default
       Conferences
     </h2>
     <ul class="post-list conferences">
-      {% assign sorted_conferences = site.conferences | sort:"endDate" | reverse %}
+      {% assign sorted_conferences = site.conferences | sort:"mostRecentYear.endDate" | reverse  %}
+      
       {% for conference in sorted_conferences %}
+       
         <li class="conference{% if conference.logo %} has-logo{% endif %}">
           {% if conference.logo %}
             <h3 class="logo">
@@ -112,7 +114,14 @@ layout: default
           {% endif %}
           {% if conference.logo %}<div class="meta-description-container">{% endif %}
           <p class="post-meta">
-            {{ conference.startDate | date: year_format }}
+            
+             {% if conference.previousYears %}
+              {% assign sorted_previous_years = conference.previousYears | sort:"endDate" %}
+              {% for year in sorted_previous_years %}
+                {{ year.endDate | date: year_format }},
+              {% endfor %}
+            {% endif %}
+            {{ conference.mostRecentYear.endDate | date: year_format }}
           </p>
           {% if conference.description %}
             <div class="description">

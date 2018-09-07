@@ -1,7 +1,8 @@
 ---
 title: Agile Midwest
-startDate: '2017-10-11'
-endDate: '2017-10-12'
+mostRecentYear:
+  startDate: '2018-07-29'
+  endDate: '2018-07-30'
 link: 'https://www.agilemidwest.org/'
 description: >-
   Agile Midwest is a week of classes, certifications, open space unconference,
@@ -9,8 +10,9 @@ description: >-
   hundreds of agilists from the Midwest region join in informal networking,
   educational experience, and shared innovative ideas.
 logo: /img/uploads/agile-midwest-logo.png
-years:
-  - year: 2017
-  - year: 2018
+previousYears:
+  - year: 
+    startDate: '2017-10-11'
+    endDate: '2017-10-12'
 ---
 

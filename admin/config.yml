@@ -181,21 +181,30 @@ collections: # A list of collections the CMS should be able to edit
   - name: "conferences"
     label: "Conference"
     folder: "_conferences"
-    slug: "{{slug}}-{{year}}"
+    slug: "{{slug}}"
     create: true 
     fields:
       - {label: "Conference", name: "title", widget: "string"}
-      - {label: "Start Date", name: "startDate", widget: "date", format: "YYYY-MM-DD"}
-      - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD"}
+      - label: "Most Recent Year"
+        name: "mostRecentYear"
+        widget: "widget"
+        fields:
+          - {label: "Start Date", name: "startDate", widget: "date", format: "YYYY-MM-DD"}
+          - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD"}
       - {label: "Web Link", name: "link", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Logo", name: "logo", widget: "image", required: false}
-      - label: "Years" 
-        name: "years" 
+      - label: "Previous Years" 
+        name: "previousYears" 
         widget: "list"
-        required: true
+        required: false
         fields:
-          - {label: "Year", name: "year", widget: "number", valueType: "int"}
+          - label: "Year"
+            name: "year"
+            widget: "widget"
+            fields:
+              - {label: "Start Date", name: "startDate", widget: "date", format: "YYYY-MM-DD"}
+              - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD"}
         
     
   - name: "trainings"
