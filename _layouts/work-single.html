@@ -15,7 +15,7 @@ layout: default
         {{ page.company }}
       </h3>
       <p class="post-meta">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {% assign date_format = site.minima.date_format | default: "%B, %Y" %}
         {% assign year_format = site.minima.date_format | default: "%Y" %}
         {% capture endYear %}{{ page.endDate | date: year_format }}{% endcapture %}
         {{ page.startDate | date: date_format }} - 
