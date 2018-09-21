@@ -9,7 +9,9 @@ layout: default
   {% if site.posts.size > 0 %}
     <ul class="post-list blog-index">
       {% for post in site.posts %}
-        {% include blog-index-snippet.html %}
+        {% if post.enabled or jekyll.environment == "development" %}
+          {% include blog-index-snippet.html %}
+        {% endif %}
       {% endfor %}
     </ul>
 
