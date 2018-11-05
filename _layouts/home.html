@@ -31,32 +31,9 @@ layout: default
 
 {% assign featured_art = site.art | where:"featured", true | sort: date | reverse %}
 
-
-<!-- featured posts -->
-
-{% if featured_posts.size > 0 %}
-<section class="home post">
-  <h3 class="section-title">
-    Recent Blog Post
-  </h3>
-  <ul class="post-list blog-index">
-    {% for post in featured_posts limit:1 %}
-      {% include blog-index-snippet.html %}
-    {% endfor %}
-  </ul>
-  <h4 class="more">
-    <a href="/blog">All Blog Posts</a>
-  </h4>
-</section>
-{% endif %}
-
-
-
-
-
-
-
 <!-- Work section -->
+
+{% include certifications.html %}
 
 {% assign work_date_format = site.minima.date_format | default: "%B, %Y" %}
 {% assign year_format = site.minima.date_format | default: "%Y" %}
@@ -84,13 +61,28 @@ layout: default
     {% endfor %}
   </ul>
   <h4 class="more">
-    <a href="/work">Full Job History</a>
+    <a href="/work">More Work History</a>
   </h4>
 </section>
 {% endif %}
 
-{% include certifications.html %}
+<!-- featured posts -->
 
+{% if featured_posts.size > 0 %}
+<section class="home post">
+  <h3 class="section-title">
+    Recent Blog Post
+  </h3>
+  <ul class="post-list blog-index">
+    {% for post in featured_posts limit:1 %}
+      {% include blog-index-snippet.html %}
+    {% endfor %}
+  </ul>
+  <h4 class="more">
+    <a href="/blog">All Blog Posts</a>
+  </h4>
+</section>
+{% endif %}
 
 <!-- Art section -->
 
