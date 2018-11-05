@@ -1,14 +1,18 @@
 ---
-title: Agile Dev West
+title: Agile Dev East
 mostRecentYear:
   startDate: '2018-11-03'
   endDate: '2018-08-10'
-link: 'https://adcwest.techwell.com/'
+link: 'https://agiledevopseast.techwell.com/'
 description: >-
-  Whether you’re new to the agile process and need to get up to speed quickly or
-  you’re experienced and ready to take your team or organization to the next
-  level, our hands-on, in-depth workshops have you covered. Plus, Agile Dev West
-  is held in conjunction with Better Software West and DevOps West conferences,
-  allowing you to choose from three distinct programs.
-logo: /img/uploads/Agile-DevOps_East_logo.png
+  Agile + DevOps East brings together practitioners 
+  seeking to accelerate the delivery of reliable, secure 
+  software applications. Find out how the practice of 
+  agile & DevOps brings cross-functional stakeholders 
+  together to deliver software with greater speed and 
+  agility while meeting quality and security demands. Learn 
+  from industry experts how your organization can leverage agile 
+  and DevOps concepts to improve deployment frequency and time to market, 
+  reduce lead time, and more successfully deliver stable new features.
+logo: /img/uploads/agile-devops_east_logo.png
 ---
