@@ -187,7 +187,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Conference", name: "title", widget: "string"}
       - label: "Most Recent Year"
         name: "mostRecentYear"
-        widget: "widget"
+        widget: object
         fields:
           - {label: "Start Date", name: "startDate", widget: "date", format: "YYYY-MM-DD"}
           - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD"}
@@ -201,7 +201,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - label: "Year"
             name: "year"
-            widget: "widget"
+            widget: object
             fields:
               - {label: "Start Date", name: "startDate", widget: "date", format: "YYYY-MM-DD"}
               - {label: "End Date", name: "endDate", widget: "date", format: "YYYY-MM-DD"}

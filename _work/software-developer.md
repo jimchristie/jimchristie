@@ -7,7 +7,7 @@ snippet: >-
   an initiative to move Shelter away from their traditional agent driven
   business model to a direct-to-consumer model.
 startDate: 2015-06-15
-endDate: 2016-10-15
+endDate: 2016-08-15
 link: 'https://sayinsurance.com/'
 skills: []
 logo: /img/uploads/shelter-logo.png
