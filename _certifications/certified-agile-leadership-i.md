@@ -4,6 +4,6 @@ authority: Scrum Alliance
 logo: /img/uploads/cal_i.png
 certificationDate: '2018-11-05'
 expirationDate: '2020-11-05'
-link: 'https://www.scrumalliance.org/community/profile/jchristie2'
+link: 'http://bcert.me/sugxfkxfr'
 ---
 
