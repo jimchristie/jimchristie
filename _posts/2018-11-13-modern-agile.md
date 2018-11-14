@@ -1,0 +1,26 @@
+---
+layout: post
+title: Modern Agile
+snippet: >-
+  Lately, I've been thinking about [Modern Agile](http://modernagile.org/) a
+  lot. It took me a while to get my head wrapped around at first, but it turns
+  out that I was completely overthinking it. But after watching [Joshua
+  Kerievsky's excellent
+  explanation](https://www.agilealliance.org/resources/videos/modern-agile/),
+  I'm finally [grokking](https://en.wikipedia.org/wiki/Grok) it.
+category: Work
+featured: true
+enabled: false
+featuredImage:
+  fill: contain
+  image: /img/uploads/modern-agile-wheel.svg
+  orientation: portrait
+date: '2018-11-13 07:36:58'
+---
+Lately, I've been thinking about [Modern Agile](http://modernagile.org/) a lot. It took me a while to get my head wrapped around at first, but it turns out that I was completely overthinking it. But after watching [Joshua Kerievsky's excellent explanation](https://www.agilealliance.org/resources/videos/modern-agile/), I'm finally [grokking](https://en.wikipedia.org/wiki/Grok) it. 
+
+You may recall that I've [written about the difference between "doing agile" and being agile](/blog/doing-agile-vs-being-agile/). Basically, people usually talk about agility as if it's something that you do. If you work in sprints, have stand ups and retros, and release code every two weeks, you're agile. But that's like saying that if you do yoga every day, you're skinny and flexible. The problem with that is that you can still overeat and not be able to touch your toes. We tend to do the same thing with our organizations. We start implementing "Agile" with a capital "A" (doing yoga) and never stop to ask ourselves if we're really becoming more agile. 
+
+I see this more and more. I just got back from [yet another conference](https://content.jimchristie.me/work/#conferences) where I heard more people talking about Scrum and SAFe and LeSS than I did about true business agility. That's not to say those talks weren't there, they just weren't the majority. And this is a place where people who care about agility gather to try to be more agile. 
+
+Fixing this is what modern agile is all about. It's not a methodology that consultants will sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) was trying to lay down.
