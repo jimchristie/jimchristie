@@ -26,7 +26,7 @@ date: '2018-11-13 07:36:58'
 }
 
 .bullet-container img {
-  height: 40px; 
+  height: auto; 
   display: inline;
   max-width: 100%;
 }
