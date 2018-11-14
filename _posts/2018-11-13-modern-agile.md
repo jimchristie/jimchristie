@@ -37,6 +37,6 @@ Safety needs to be everywhere. We need social safety so that people can voice th
 
 This is where old school Agile falls the furthest behind. "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale." A couple of weeks is no longer good enough, and a couple of months is an eternity. I also really like the focus on delivering _value_ here. 
 
-### ![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'} Experiment and Learn Rapidly
+### <span style='width: 50px; text-align: center;'>![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'}</span> Experiment and Learn Rapidly
 
 This is the core of business agility. Business agility is all about being able to try new things, learn from them, and pivot based on the results.
