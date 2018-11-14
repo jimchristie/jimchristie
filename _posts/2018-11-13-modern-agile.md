@@ -31,11 +31,12 @@ date: '2018-11-13 07:36:58'
   max-width: 100%;
 }
 
-.indented {
-  width: calc(100% - 20px);
-  margin-left: auto;
-  margin-right: auto;
+.not-a-quote {
+  color: #111;
+  font-style: initial;
+  font-size: 1rem;
 }
+
 </style>
 
 Lately, I've been thinking about [Modern Agile](http://modernagile.org/) a lot. It took me a while to get my head wrapped around it at first, but it turns out that I was completely overthinking it. After watching [Joshua Kerievsky's excellent explanation](https://www.agilealliance.org/resources/videos/modern-agile/), I'm finally starting to [grok](https://en.wikipedia.org/wiki/Grok) it. 
@@ -46,29 +47,23 @@ I see this more and more. I just got back from [yet another conference](/work/#c
 
 Fixing this is what modern agile is all about. It's not a methodology that consultants will try to sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) were trying to lay down.
 
-<div class="indented">
+> ### <span class="bullet-container">![](/img/uploads/icon-small-make-people-awesome-alt.svg)</span> Make People Awesome
+> 
+> <span class="not-a-quote">Are your employees awesome? Are your customers? How can you support them so that they can be their most awesome?</span>
+> 
+> ### <span class="bullet-container">![](/img/uploads/icon-small-make-safety-a-prerequisite-alt.svg)</span> Make Safety a Prerequisite
+> 
+> <span class="not-a-quote">Safety needs to be everywhere. We need social safety so that people can voice their opinions. We need safety to try new things without fear of failure. We need safety in our deployment pipeline through automated tests. We need to be able to deploy rapidly in case those tests fail. </span>
+> 
+> ### <span class="bullet-container">![](/img/uploads/icon-small-deliver-value-continuously-alt.svg)</span> Deliver Value Continuously
+> 
+> <span class="not-a-quote">This is where old school Agile falls the furthest behind. "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale." A couple of weeks is no longer good enough, and a couple of months is an eternity. I also really like the focus on delivering _value_ here. </span>
+> 
+> ### <span class="bullet-container">![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg)</span> Experiment and Learn Rapidly
+> 
+> <span class="not-a-quote">This is the core of business agility. Business agility is all about being able to try new things, learn from them, and move in a new direction based on the results.</span>
 
-### <span class="bullet-container">![](/img/uploads/icon-small-make-people-awesome-alt.svg)</span> Make People Awesome
-
-Are your employees awesome? Are your customers? How can you support them so that they can be their most awesome?
-
-### <span class="bullet-container">![](/img/uploads/icon-small-make-safety-a-prerequisite-alt.svg)</span> Make Safety a Prerequisite
-
-Safety needs to be everywhere. We need social safety so that people can voice their opinions. We need safety to try new things without fear of failure. We need safety in our deployment pipeline through automated tests. We need to be able to deploy rapidly in case those tests fail. 
-
-### <span class="bullet-container">![](/img/uploads/icon-small-deliver-value-continuously-alt.svg)</span> Deliver Value Continuously
-
-This is where old school Agile falls the furthest behind. "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale." A couple of weeks is no longer good enough, and a couple of months is an eternity. I also really like the focus on delivering _value_ here. 
-
-### <span class="bullet-container">![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg)</span> Experiment and Learn Rapidly
-
-This is the core of business agility. Business agility is all about being able to try new things, learn from them, and move in a new direction based on the results.
-
-</div>
-
-{::options parse_block_html="true" /}
-
-There's no this over that mentality in Modern Agile. There's no risk of "[tl;dr](https://en.wikipedia.org/wiki/TL;DR)". Just four things to focus on that are easy to remember. Modern Agile doesn't suggest that these things are easy, and neither do I. They're hard. Creating safety is uncomfortable. Continuous delivery is a lot of work. Continuously delivering_ value _is even more.  Experimentation and learning is a huge shift for most organizations. And making people awesome...what does that even mean? 
+There's no "this over that" mentality in Modern Agile. There's no risk of "[tl;dr](https://en.wikipedia.org/wiki/TL;DR)". Just four things to focus on that are easy to remember. Modern Agile doesn't suggest that these things are easy to _do_, and neither do I. They're hard. Creating safety is uncomfortable. Continuous delivery is a lot of work. Continuously delivering _value_ is even more.  Experimentation and learning is a huge shift for most organizations. And making people awesome...what does that even mean? 
 
 Modern agile doesn't give you those answers. That's because it shouldn't. Your organization is a special snowflake and, to mix metaphors, there are no silver bullets. But Manifesto agile was never meant to be about silver bullets either. Rather, it was always supposed to be a loose set of ideals. And we were always supposed to figure out the nuts and bolts of how to apply them ourselves. 
 
