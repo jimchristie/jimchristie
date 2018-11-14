@@ -3,11 +3,11 @@ layout: post
 title: Modern Agile
 snippet: >-
   Lately, I've been thinking about [Modern Agile](http://modernagile.org/) a
-  lot. It took me a while to get my head wrapped around at first, but it turns
-  out that I was completely overthinking it. But after watching [Joshua
+  lot. It took me a while to get my head wrapped around it at first, but it
+  turns out that I was completely overthinking it. After watching [Joshua
   Kerievsky's excellent
   explanation](https://www.agilealliance.org/resources/videos/modern-agile/),
-  I'm finally [grokking](https://en.wikipedia.org/wiki/Grok) it.
+  I'm finally starting to [grok](https://en.wikipedia.org/wiki/Grok) it. 
 category: Work
 featured: true
 enabled: false
@@ -32,7 +32,7 @@ date: '2018-11-13 07:36:58'
 }
 </style>
 
-Lately, I've been thinking about [Modern Agile](http://modernagile.org/) a lot. It took me a while to get my head wrapped around it at first, but it turns out that I was completely overthinking it. After watching [Joshua Kerievsky's excellent explanation](https://www.agilealliance.org/resources/videos/modern-agile/), I'm finally [grokking](https://en.wikipedia.org/wiki/Grok) it. 
+Lately, I've been thinking about [Modern Agile](http://modernagile.org/) a lot. It took me a while to get my head wrapped around it at first, but it turns out that I was completely overthinking it. After watching [Joshua Kerievsky's excellent explanation](https://www.agilealliance.org/resources/videos/modern-agile/), I'm finally starting to [grok](https://en.wikipedia.org/wiki/Grok) it. 
 
 You may recall that I've [written about the difference between "doing agile" and being agile](/blog/doing-agile-vs-being-agile/). Basically, people usually talk about agility as if it's something that you do. If you work in sprints, have stand ups and retros, and release code every two weeks, you're agile. But that's like saying that if you do yoga every day, you're skinny and flexible. The problem with that is that you can still overeat and not be able to touch your toes. We tend to do the same thing with our organizations. We start implementing "Agile" with a capital "A" (doing yoga) and never stop to ask ourselves if we're really improving our business agility. 
 
