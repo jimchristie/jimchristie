@@ -17,6 +17,21 @@ featuredImage:
   orientation: portrait
 date: '2018-11-13 07:36:58'
 ---
+<style>
+.bullet-container {
+  width: 50px; 
+  text-align: center; 
+  display: inline-block; 
+  margin-right: 10px
+}
+
+.bullet-container img {
+  height: 40px; 
+  display: inline, 
+  max-width: 100%
+}
+</style>
+
 Lately, I've been thinking about [Modern Agile](http://modernagile.org/) a lot. It took me a while to get my head wrapped around at first, but it turns out that I was completely overthinking it. But after watching [Joshua Kerievsky's excellent explanation](https://www.agilealliance.org/resources/videos/modern-agile/), I'm finally [grokking](https://en.wikipedia.org/wiki/Grok) it. 
 
 You may recall that I've [written about the difference between "doing agile" and being agile](/blog/doing-agile-vs-being-agile/). Basically, people usually talk about agility as if it's something that you do. If you work in sprints, have stand ups and retros, and release code every two weeks, you're agile. But that's like saying that if you do yoga every day, you're skinny and flexible. The problem with that is that you can still overeat and not be able to touch your toes. We tend to do the same thing with our organizations. We start implementing "Agile" with a capital "A" (doing yoga) and never stop to ask ourselves if we're really improving our business agility. 
@@ -25,7 +40,7 @@ I see this more and more. I just got back from [yet another conference](https://
 
 Fixing this is what modern agile is all about. It's not a methodology that consultants will sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) were trying to lay down.
 
-### <span style='width: 50px; text-align: center; display: inline-block, margin-right: 10px'>![](/img/uploads/icon-small-make-people-awesome-alt.svg){:style='height: 40px; display: inline, max-width: 100%'}</span> Make People Awesome
+### <span class="bullet-container">![](/img/uploads/icon-small-make-people-awesome-alt.svg)</span> Make People Awesome
 
 Are your employees awesome? Are your customers? How can you support them so that they can be their most awesome?
 
