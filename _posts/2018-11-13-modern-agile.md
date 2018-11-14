@@ -54,8 +54,8 @@ This is where old school Agile falls the furthest behind. "Deliver working softw
 
 ### <span class="bullet-container">![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg)</span> Experiment and Learn Rapidly
 
-This is the core of business agility. Business agility is all about being able to try new things, learn from them, and pivot based on the results.
+This is the core of business agility. Business agility is all about being able to try new things, learn from them, and move in a new direction based on the results.
 
-
+Modern Agile doesn't suggest that these things are easy, and neither do I. They're hard. Creating safety is uncomfortable. Continuous delivery is a lot of work. Continuously delivering_ value _is even more.  Experimentation and learning is a huge shift for most organizations. And making people awesome...what does that even mean? Modern agile doesn't give you these answers. That's because it shouldn't. Your organization is a special snowflake and, to mix metaphors, there are no silver bullets. 
 
 \* All images in this post are courtesy of [Modern Agile](http://modernagile.org/).
