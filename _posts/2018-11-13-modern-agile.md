@@ -25,18 +25,18 @@ I see this more and more. I just got back from [yet another conference](https://
 
 Fixing this is what modern agile is all about. It's not a methodology that consultants will sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) were trying to lay down.
 
-### ![](/img/uploads/icon-small-make-people-awesome-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'} Make People Awesome
+### <span style='width: 50px; text-align: center; display: inline-block'>![](/img/uploads/icon-small-make-people-awesome-alt.svg){:style='height: 40px; display: inline'}</span> Make People Awesome
 
 Are your employees awesome? Are your customers? How can you support them so that they can be their most awesome?
 
-### ![](/img/uploads/icon-small-make-safety-a-prerequisite-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'} Make Safety a Prerequisite
+### <span style='width: 50px; text-align: center; display: inline-block'>![](/img/uploads/icon-small-make-safety-a-prerequisite-alt.svg){:style='height: 40px; display: inline'}</span> Make Safety a Prerequisite
 
 Safety needs to be everywhere. We need social safety so that people can voice their opinions. We need safety to try new things without fear of failure. We need safety in our deployment pipeline through automated tests. We need to be able to deploy rapidly in case those tests fail. 
 
-### ![](/img/uploads/icon-small-deliver-value-continuously-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'} Deliver Value Continuously
+### <span style='width: 50px; text-align: center; display: inline-block'>![](/img/uploads/icon-small-deliver-value-continuously-alt.svg){:style='height: 40px; display: inline'}</span> Deliver Value Continuously
 
 This is where old school Agile falls the furthest behind. "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale." A couple of weeks is no longer good enough, and a couple of months is an eternity. I also really like the focus on delivering _value_ here. 
 
-### <span style='width: 50px; text-align: center;'>![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'}</span> Experiment and Learn Rapidly
+### <span style='width: 50px; text-align: center; display: inline-block'>![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg){:style='height: 40px; display: inline'}</span> Experiment and Learn Rapidly
 
 This is the core of business agility. Business agility is all about being able to try new things, learn from them, and pivot based on the results.
