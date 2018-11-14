@@ -27,8 +27,8 @@ date: '2018-11-13 07:36:58'
 
 .bullet-container img {
   height: 40px; 
-  display: inline, 
-  max-width: 100%
+  display: inline;
+  max-width: 100%;
 }
 </style>
 
@@ -44,14 +44,14 @@ Fixing this is what modern agile is all about. It's not a methodology that consu
 
 Are your employees awesome? Are your customers? How can you support them so that they can be their most awesome?
 
-### <span style='width: 50px; text-align: center; display: inline-block, margin-right: 10px'>![](/img/uploads/icon-small-make-safety-a-prerequisite-alt.svg){:style='height: 40px; display: inline, max-width: 100%'}</span> Make Safety a Prerequisite
+### <span class="bullet-container">![](/img/uploads/icon-small-make-safety-a-prerequisite-alt.svg)</span> Make Safety a Prerequisite
 
 Safety needs to be everywhere. We need social safety so that people can voice their opinions. We need safety to try new things without fear of failure. We need safety in our deployment pipeline through automated tests. We need to be able to deploy rapidly in case those tests fail. 
 
-### <span style='width: 50px; text-align: center; display: inline-block, margin-right: 10px'>![](/img/uploads/icon-small-deliver-value-continuously-alt.svg){:style='height: 40px; display: inline, max-width: 100%'}</span> Deliver Value Continuously
+### <span class="bullet-container">![](/img/uploads/icon-small-deliver-value-continuously-alt.svg)</span> Deliver Value Continuously
 
 This is where old school Agile falls the furthest behind. "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale." A couple of weeks is no longer good enough, and a couple of months is an eternity. I also really like the focus on delivering _value_ here. 
 
-### <span style='width: 50px; text-align: center; display: inline-block, margin-right: 10px'>![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg){:style='height: 40px; display: inline, max-width: 100%'}</span> Experiment and Learn Rapidly
+### <span class="bullet-container">![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg)</span> Experiment and Learn Rapidly
 
 This is the core of business agility. Business agility is all about being able to try new things, learn from them, and pivot based on the results.
