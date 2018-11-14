@@ -46,7 +46,7 @@ I see this more and more. I just got back from [yet another conference](/work/#c
 
 Fixing this is what modern agile is all about. It's not a methodology that consultants will try to sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) were trying to lay down.
 
-<div class="indented>
+<div class="indented">
 
 ### <span class="bullet-container">![](/img/uploads/icon-small-make-people-awesome-alt.svg)</span> Make People Awesome
 
