@@ -56,7 +56,7 @@ This is where old school Agile falls the furthest behind. "Deliver working softw
 
 This is the core of business agility. Business agility is all about being able to try new things, learn from them, and move in a new direction based on the results.
 
-There's no this over that mentality. There's no chance of [tl;dr](https://en.wikipedia.org/wiki/TL;DR). Just four things to focus on that are easy to remember. Modern Agile doesn't suggest that these things are easy, and neither do I. They're hard. Creating safety is uncomfortable. Continuous delivery is a lot of work. Continuously delivering_ value _is even more.  Experimentation and learning is a huge shift for most organizations. And making people awesome...what does that even mean? 
+There's no this over that mentality. There's no risk of "[tl;dr](https://en.wikipedia.org/wiki/TL;DR)". Just four things to focus on that are easy to remember. Modern Agile doesn't suggest that these things are easy, and neither do I. They're hard. Creating safety is uncomfortable. Continuous delivery is a lot of work. Continuously delivering_ value _is even more.  Experimentation and learning is a huge shift for most organizations. And making people awesome...what does that even mean? 
 
 Modern agile doesn't give you those answers. That's because it shouldn't. Your organization is a special snowflake and, to mix metaphors, there are no silver bullets. But Manifesto agile was never meant to be about silver bullets either. Rather, it was always supposed to be a loose set of ideals. And we were always supposed to figure out the nuts and bolts of how to apply them ourselves. 
 
