@@ -23,4 +23,18 @@ You may recall that I've [written about the difference between "doing agile" and
 
 I see this more and more. I just got back from [yet another conference](https://content.jimchristie.me/work/#conferences) where I heard more people talking about Scrum and SAFe and LeSS than I did about true business agility. That's not to say those talks weren't there, they just weren't the majority. And this is a place where people who care about agility gather to try to be more agile. 
 
-Fixing this is what modern agile is all about. It's not a methodology that consultants will sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) was trying to lay down.
+Fixing this is what modern agile is all about. It's not a methodology that consultants will sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) were trying to lay down.
+
+### Make People Awesome
+
+Are your employees awesome? Are your customers? How can you support them so that they can be their most awesome?
+
+### Make Safety a Prerequisite
+
+Safety needs to be everywhere. We need social safety so that people can voice their opinions. We need safety to try new things without fear of failure. We need safety in our deployment pipeline through automated tests. We need to be able to deploy rapidly in case those tests fail. 
+
+### Deliver Value Continuously
+
+This is where old school Agile falls the furthest behind. "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale." A couple of weeks is no longer good enough, and a couple of months is an eternity. I also really like the focus on delivering _value_ here. 
+
+### Experiment and Learn Rapidly
