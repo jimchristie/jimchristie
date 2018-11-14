@@ -25,7 +25,7 @@ I see this more and more. I just got back from [yet another conference](https://
 
 Fixing this is what modern agile is all about. It's not a methodology that consultants will sell you. It's just a set of four principles that nicely capture what the original [Manifesto](http://agilemanifesto.org) and its corresponding [Twelve Principles](http://agilemanifesto.org/principles.html) were trying to lay down.
 
-### ![](/img/uploads/icon-small-make-people-awesome-alt.svg){:style='height: 40px'}{:display: 'inline'} Make People Awesome
+### ![](/img/uploads/icon-small-make-people-awesome-alt.svg){:style='height: 40px; display: inline'} Make People Awesome
 
 Are your employees awesome? Are your customers? How can you support them so that they can be their most awesome?
 
