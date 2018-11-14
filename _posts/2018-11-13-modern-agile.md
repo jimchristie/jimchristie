@@ -33,7 +33,7 @@ Are your employees awesome? Are your customers? How can you support them so that
 
 Safety needs to be everywhere. We need social safety so that people can voice their opinions. We need safety to try new things without fear of failure. We need safety in our deployment pipeline through automated tests. We need to be able to deploy rapidly in case those tests fail. 
 
-### ![](/img/uploads/icon-deliver-value-continuously-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'} Deliver Value Continuously
+### ![](/img/uploads/icon-small-deliver-value-continuously-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'} Deliver Value Continuously
 
 This is where old school Agile falls the furthest behind. "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale." A couple of weeks is no longer good enough, and a couple of months is an eternity. I also really like the focus on delivering _value_ here. 
 
