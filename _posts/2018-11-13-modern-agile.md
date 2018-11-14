@@ -39,4 +39,4 @@ This is where old school Agile falls the furthest behind. "Deliver working softw
 
 ### ![](/img/uploads/icon-small-experiment-and-learn-rapidly-alt.svg){:style='height: 40px; display: inline; margin-right: 10px'} Experiment and Learn Rapidly
 
-This is the core of business agility.
+This is the core of business agility. Business agility is all about being able to try new things, learn from them, and pivot based on the results.
