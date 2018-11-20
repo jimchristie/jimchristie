@@ -153,7 +153,6 @@ var lazyLoadImages = function(margin){
       setTimeout(function(){
         
         if ( shouldBeDisplayed(elements[i], margin) ){
-          console.log(elements[i]);
           loadImage(elements[i]);
         }
       }, 1 * i);
