@@ -10,7 +10,7 @@ roles:
   - role: Trainer
   - role: Scrum Master
   - role: Program Manager
-startDate: 2016-08-15
+startDate: 2017-06-15
 endDate: 9999-12-31
 link: 'https://shelterinsurance.com'
 skills:
@@ -31,6 +31,6 @@ In addition to organizational coaching and training, I am have also been engaged
 
 Accomplishments:
 
-* Worked with other teams to improve our program level demos for greater collaboration
+* Coached several teams through transformative periods
 * Worked with a group of Scrum Masters and Product Owners to create, facilitate, and evolve a training program for new employees and employees new to agile
 * Mentored new Scrum Masters in their new roles
