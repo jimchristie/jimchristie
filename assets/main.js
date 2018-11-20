@@ -49,7 +49,13 @@ function pixelMargin(percentage) {
   return windowHeight * (percentage / 100);
 }
 
+function isAboveViewport(element) {
+  element.position = element.getBoundingClientRect();
+  return (element.position.bottom <= 0);
+}
+
 function isJustAboveViewport(element, margin) {
+  
   var windowHeight = window.innerHeight || document.documentElement.clientHeight;
   margin = (typeof margin === 'undefined') ? 10 : margin;
   element.position = element.getBoundingClientRect();
@@ -117,6 +123,11 @@ function isComingIntoView(element, margin) {
   );
 }
 
+function shouldBeDisplayed(element, margin) {
+  margin = (typeof margin === 'undefined') ? 10 : margin;
+  return isVisible(element) || isAboveViewport(element) || nearlyVisible(element, margin) || isComingIntoView(element);
+}
+
 /*************************** Lazy loading image functions *****************************************/
 
 var loadImage = function(element){
@@ -130,12 +141,19 @@ var lazyLoadImages = function(margin){
   var elements= document.querySelectorAll('[data-image]');
   
   for (var i = 0; i < elements.length; i++){
+    // load the images above the viewport so that the page renders at the correct position when users hit the back button
+    // this shouldn't ever affect performance since these images should be cached
+    if ( isAboveViewport(elements[i]) ) 
+        loadImage(elements[i]);
+    
     // this runs in an IIFE to make the timeout work
     // ref: http://borgs.cybrilla.com/tils/javascript-for-loop-with-delay-in-each-iteration-using-iife/
+    // the timeout is to help prevent lower elements from loading first
     (function(i){
       setTimeout(function(){
         
-        if ( isVisible(elements[i]) || nearlyVisible(elements[i], margin) || isComingIntoView(elements[i])){
+        if ( shouldBeDisplayed(elements[i], margin) ){
+          console.log(elements[i]);
           loadImage(elements[i]);
         }
       }, 1 * i);
