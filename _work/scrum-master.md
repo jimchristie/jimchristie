@@ -15,7 +15,7 @@ logo: /img/uploads/shelter-logo.png
 featured: true
 enabled: true
 ---
-Shelter Insurance, a 70 year-old insurance company primarily working through agents, launched a subsidiary company to capture a new audience through direct web sales. As part of this effort, Shelter piloted a move to the agile mindset and its corresponding methodologies. As a Scrum Master on one of the new teams formed for this product, it was my responsibility to guide the team in the application of Scrum practices and values.
+Shelter Insurance, a 70 year-old insurance company that primarily sells its products through agents, launched a subsidiary company to capture a new audience through direct web sales. As part of this effort, Shelter piloted a move to the agile mindset and its corresponding methodologies. As a Scrum Master on one of the new teams formed for this product, it was my responsibility to guide the team in the application of Scrum practices and values.
 Accomplishments:
 
 * Worked with other teams to improve our program level demos for greater collaboration

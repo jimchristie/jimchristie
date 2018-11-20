@@ -4,7 +4,7 @@ company: Shelter Insurance
 snippet: >-
   As a coach and trainer at Shelter Insurance, a 70 year-old
   agent focused insurance company, I engage teams and individuals to evaluate
-  and improve their workflows.
+  and improve their workflows and deliver more innovative products.
 roles:
   - role: Agile Coach
   - role: Trainer
@@ -31,6 +31,6 @@ In addition to organizational coaching and training, I am have also been engaged
 
 Accomplishments:
 
-* Coached several teams through transformative periods
+* Coached several teams through transformative periods, utilizing Kanban and Scrum frameworks
 * Worked with a group of Scrum Masters and Product Owners to create, facilitate, and evolve a training program for new employees and employees new to agile
-* Mentored new Scrum Masters in their new roles
+* Mentored new Scrum Masters and Product Owners in their new roles
