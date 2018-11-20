@@ -17,9 +17,16 @@ title: Jim Christie
 logo: '/img/uploads/logo.jpg'
 contactFormEmail: 'jim.e.christie+web-submission@gmail.com'
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm Jim Christie. I'm a web devoloper, an agile coach, a cyclist, and sometimes, an artist. As anyone who works on the internet should, I love cats. 
-  I have over five years of web development experience. I lean strongly toward back end functionality of websites. I can do design, but I don't love it and, consequently, I'm not the best at it. 
-  I've become a strong supporter of agile methodologies.
+  <p>I'm a web devoloper, an agile coach, a cyclist, and sometimes, an artist. 
+    I have over eight years of leadership experience, three years of which have been in software development. 
+    My experience in the software development industry has led me to become a strong supporter of the lean and agile mindsets and their supporting methodologies. 
+  </p>
+  <p>
+    I spend my free time developing hobby software projects, working on my farm, creating digital art, and riding my bicycle.
+  </p>
+  <p style="margin: 0">
+    As anyone who works and lives on the internet should, I love cats. 
+  </p>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jimirings
