@@ -10,7 +10,7 @@ snippet: >-
   I'm finally starting to [grok](https://en.wikipedia.org/wiki/Grok) it. 
 category: Work
 featured: true
-enabled: false
+enabled: true
 featuredImage:
   fill: contain
   image: /img/uploads/modern-agile-wheel.svg
