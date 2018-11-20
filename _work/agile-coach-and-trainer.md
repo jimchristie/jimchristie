@@ -27,8 +27,6 @@ In my coaching role, I work with other coaches to facilitate organizational impr
 
 As one of six trainers at Shelter, I have been instrumental in the process of designing and implementing an agile training program at the organization. We have developed the content and curriculum for this program, and have delivered several "bootcamp" style agile training sessions. We are currently engaged in establishing a regular program within the organization.
 
-In addition to organizational coaching and training, I am have also been engaged as a Scrum Master on a development team within the Say initiative and am currently serving as the Program Manager for that initiative.
-
 Accomplishments:
 
 * Coached several teams through transformative periods, utilizing Kanban and Scrum frameworks
