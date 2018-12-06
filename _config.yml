@@ -27,8 +27,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   <p style="margin: 0">
     As anyone who works and lives on the internet should, I love cats. 
   </p>
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jimchristie.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jimirings
 github_username:  jimchristie
 linkedin_username: jimchristieagile

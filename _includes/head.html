@@ -4,13 +4,19 @@
   {{ assign page.content = og_description }}
 {% endif %}
 
+{% if jekyll.environment == 'production' %}
+  {% assign url = site.url %}
+{% else %}
+  {% assign url = 'http://' | append: jekyll.environment | append: '.jimchristie.me' %}
+{% endif %}
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {% if page.title %}<meta property='og:title' content='{{ site.title }} | {{ page.title }}' />{% endif %}
   {% if page.featuredImage and page.featuredImage.image != '' %}<meta property='og:image' content='{{ page.featuredImage.image }}' />{% endif %}
   {% if og_description %}<meta property='og:description' content='{{ og_description | markdownify | strip_html }}' />{% endif %}
-  <meta property='og:url' content="{{ site.url }}{{ page.url }}" />
+  <meta property='og:url' content="{{ url }}{{ page.url }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111" />
 

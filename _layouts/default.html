@@ -5,12 +5,11 @@
 
   <body{% if jekyll.environment == "development" %} class="development"{% endif %}>
     
-    {% if jekyll.environment == "development" %}
-    <!-- DEVELOPMENT -->
-    {% endif %}
     
     {% if jekyll.environment == "production" %}
-    <!-- PRODUCTION -->
+      <!-- PRODUCTION -->
+    {% else %}
+      <!-- {{ jekyll.environment | upcase }} -->
     {% endif %}
 
     {% include header.html %}
