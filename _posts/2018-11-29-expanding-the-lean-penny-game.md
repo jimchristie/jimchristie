@@ -10,6 +10,10 @@ snippet: >-
 category: Work
 featured: false
 enabled: false
+featuredImage:
+  fill: cover
+  image: /img/uploads/pennies-and-dice-2.jpg
+  orientation: landscape
 date: '2018-11-29 06:53:41'
 ---
 One of the most fun things about training is the way that the trainees surprise me. At my last training session, a team floored me with their creative solution to the [penny game that I previously wrote about.](/blog/lean-penny-game-for-cross-functional-teams/)
