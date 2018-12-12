@@ -10,7 +10,7 @@ snippet: >-
   the training to see how far we could push this, and what additional lessons
   might be gleaned from it. 
 category: Work
-featured: false
+featured: true
 enabled: true
 featuredImage:
   fill: cover
