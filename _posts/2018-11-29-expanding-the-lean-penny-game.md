@@ -14,7 +14,7 @@ featured: false
 enabled: true
 featuredImage:
   fill: cover
-  image: /img/uploads/pennies-and-dice-2.jpg
+  image: ''
   orientation: landscape
 date: '2018-11-29 06:53:41'
 ---
