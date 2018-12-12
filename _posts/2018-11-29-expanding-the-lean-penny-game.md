@@ -11,7 +11,7 @@ snippet: >-
   might be gleaned from it. 
 category: Work
 featured: false
-enabled: false
+enabled: true
 featuredImage:
   fill: cover
   image: /img/uploads/pennies-and-dice-2.jpg
