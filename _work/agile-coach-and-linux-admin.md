@@ -14,7 +14,7 @@ logo: /img/uploads/979-design-logo.png
 featured: false
 enabled: true
 ---
-979 Design was a small start-up web design agency. I primarily filled two roles in this organization: Linux administrator and agile coach.
+979 Design was a small start-up web development agency. I primarily filled two roles in this organization: Linux administrator and agile coach.
 
 As the agile coach for the company, I helped the teams to discover better workflows. This required different approaches for different projects. Some projects were small and short-lived, requiring some initial set up, minimal help along the way, and then a transition to maintenance mode. Others were long and complex, requiring a more direct, hands-on approach throughout the life of the project. 
 
