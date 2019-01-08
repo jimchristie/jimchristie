@@ -86,8 +86,17 @@
     text-align: center;
   }
   
+  h3 {
+    @include rem-fallback(font-size, 18px);
+  }
+  
   li {
     width: 100%;
+    @include rem-fallback(margin-right, 25px);
+    
+    &:last-child {
+      margin-right: 0;
+    }
   }
   
   @include media-query($on-laptop) {
@@ -114,7 +123,7 @@
   
   .logo {
     margin: auto;
-    @include rem-fallback(height, 125px);
+    @include rem-fallback(height, 100px);
     text-align: center;
     width: auto;
     

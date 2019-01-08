@@ -16,6 +16,7 @@
     </{{ sectionTitleTag }}>
     <ul class="post-list certifications">
       {% for post in sorted_certs %}
+      {% if post.featured or page.layout != 'home' %}
         <li>
           {% if post.logo %}
             <div class="logo">
@@ -41,6 +42,7 @@
             {% endif %}
           </div>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </section>
