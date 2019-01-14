@@ -33,8 +33,6 @@ layout: default
 
 <!-- Work section -->
 
-{% include certifications.html %}
-
 {% assign work_date_format = site.minima.date_format | default: "%B, %Y" %}
 {% assign year_format = site.minima.date_format | default: "%Y" %}
 {% assign numberOfCurrentJobs = 0 %}
@@ -65,6 +63,8 @@ layout: default
   </h4>
 </section>
 {% endif %}
+
+{% include certifications.html %}
 
 <!-- featured posts -->
 

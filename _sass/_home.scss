@@ -78,10 +78,6 @@
       }
     }
     
-    .certification-header {
-      text-align: left;
-    }
-    
     .certifications {
       .certification-title {
         @include rem-fallback(margin-top, $quarter-spacing);
